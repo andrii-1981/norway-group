@@ -47,73 +47,70 @@
 <body>
      <!-- Block 1 "header" Oleg Filonenko starts here -->
      <header class="header">
-          <div class="header__topnav" id="top">
-               <div class="top__logo">
-                    <a href="#top"><img src="img/norway-logo.jpg" alt="Logo, go to top">
-                    </a>
-               </div>
-               <div class="navigation__links">
-
-                    <a href="#about">About us</a>
+          <!-- need to refresh page? -->
+          <button id="top" onClick="window.location.reload();"><img src="img/norway-logo.jpg"
+                    alt="Logo; Press to refresh page"></button>
+          <!-- <div class="logo"><a href="#top"><img src="img/norway-logo.jpg" alt="Logo, go to top"> </a> </div>-->
+          <div class="header__topnav">
+               <div class="navigation-link">
+                    <a href="#about_cards">About us</a>
                     <a href="#itinerary">Itinerary</a>
                     <a href="#testimonials">Testimonials</a>
                     <a href="#blog">Blog</a>
                     <a href="#contacts">Contacts </a>
                </div>
-               <div class="join__link">
-                    <a href="#join">Join us <span class="material-icons-round right-arrow"> trending_flat </span>
+               <div class="join-link">
+                    <a href="#join">Join us<span class="material-icons-round right-arrow"> trending_flat </span>
                     </a>
                </div>
-               <div class="burger-nav-open">
-                    <a href="#open-top-nav" <span class="material-icons-round"> menu </span></a>
+               <div class="burger-nav-icon">
+                    <a href="#open-top-nav"> <span class="material-icons-round"> menu </span></a>
+                    <a href="#close-top-nav"> <span class="material-icons-round"> close </span></a>
                </div>
-               <div class="burger-nav-close">
-                    <a href="#close-top-nav" <span class="material-icons-round"> close </span></a>
+          </div>
+          <div class="header__section-name">
+               <h1>
+                    <span class="long-dash">?</span><span class="section-heading">YOUR PERFECT JORNEY TO</span>
+               </h1>
+               <h2 class="section-subheading norway">Norway</h2>
+          </div>
+
+          <div class="header__goto-norway-video">
+               <div>
+                    <img width=24 src="img/img-header/icon-video.svg" alt="press to see video">
+               </div>
+               <div>
+                    <p><span class="long-dash">?</span>Watch the promo video!</p>
                </div>
           </div>
 
-          <div class="header__top-heading">
-               <div class="super-heading">
-                    <h1>
-                         <span class="long-dash">━</span><span class="section-heading">YOUR PERFECT JORNEY TO</span>
-                    </h1>
-                    <h2 class="section-heading norway">Norway</h2>
-               </div>
-               <div class="lets-look-video">
-                    <p><span class="material-icons-round"> smart_display </span><span class="long-dash">━</span><a
-                              href="#about-video" class="video-link">Watch the promo video!</a></p>
-               </div>
-          </div>
-
-          <div class="next-trip">
-               <div class=intro-video>
-                    <video width="500" controls poster="img/img-header/press-to-play-video.jpg">
-                         <source type="video/mp4" src="video/introducing-norway.mp4">
-                    </video>
-
-                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/miJaLj799is" title="YouTube video player"
+          <div class="header__intro-video">
+               <video width="500" controls poster="img/img-header/press-to-play-video.jpg">
+                    <source type="video/mp4" src="video/introducing-norway.mp4">
+               </video>
+               <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/miJaLj799is" title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe> -->
-
-               </div>
-               <div class="next-trip">
-                    <h4>Next Trip to Norway</h4>
-                    <p class="price">$ PRICE| DATES (after booking)</p>
-                    <p class="ten-days">10 days of travel and 5 unique places in Norway are waiting for us ...</p>
-                    <div class="read-more">
-                         <a href="#places">Read more<span class="material-icons-round right-arrow"> trending_flat
-                              </span>
-                         </a>
-
-                    </div>
-               </div>
           </div>
 
-
-
-
-     </header> <!-- End of block 1 "header" Oleg Filonenko  -->
+          <div class="header__next-trip">
+               <h3>Next Trip to Norway</h3>
+               <div class="price-date">
+                    <p>$2300</p>
+                    <p>17 NOV. - 22 NOV.</p>
+               </div>
+               <p class="travel">10 days of travel and 5 unique places in Norway are waiting for us ...</p>
+               <div class="read">
+                    <!-- <div><a href="#places">Read more<span class="material-icons-round right-arrow"> trending_flat
+                         </span></a></div>
+                    </a> -->
+                    <div><a href="#places">Read more</a></div>
+                    <div style="background-color: rgb(235, 241, 239);"><a href="#places"><img width=24 src="img/img-header/trending_flat_white_24dp.svg"
+                                   alt="right arrow"></a></div>
+               </div>
+          </div>
+     </header> <!-- End of Oleg`s section -->
 
      <main>
           <!--Block 2 "about" Volodymir Iluk starts here-->
