@@ -5,15 +5,21 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
 * {
-  margin: 0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
-/* :root {
+:root {
+  --h2-text-color: rgb(111, 115, 128);
+  --h3-text-color: rgb(80, 81, 85);
+  --h5-text-color: rgb(255, 255, 255);
+  --p-text-color: rgb(80, 81, 85);
+  --numbers-color: rgb(35, 36, 40);
+  --span-h2-color: rgb(238, 46, 20);
 }
- */
+
 
   h3 {
     font-family: 'Playfair Display', serif;
