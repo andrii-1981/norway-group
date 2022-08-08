@@ -1,0 +1,78 @@
+.norway {
+}
+.norway__container {
+    margin-top: 100px;
+}
+.container__flex {
+    display: flex;
+}
+.container__image {
+    flex: 0 1 33%;
+}
+.image__a {
+}
+.container__norway-tittle {
+    flex: 0 1 33%;
+    
+}
+.norway h2 {
+    color: var(--h2-text-color);
+    text-transform: uppercase;
+}
+.dash {
+    color: var(--span-h2-color);
+}
+.norway h3 {
+    color: var(--h3-text-color);
+    padding-top: 45px;
+    padding-bottom: 30px;
+}
+.norway p {
+    color: var(--p-text-color);
+    padding-top: 15px;
+    width: 315px;
+    
+}
+.container__norway-text {
+    flex: 0 1 33%;
+}
+.norway__items {
+    display: flex;
+
+}
+.item__block {
+   
+   padding: 50px 0px 50px 0px;
+}
+.item__number {
+    color: var(--numbers-color);
+    font-weight: 500;
+    line-height: 60px;
+    font-size: 60px;
+    text-align: center;
+}
+.item__subtext {
+    color: var(--p-text-color);
+    font-weight: 400;
+    line-height: 24px;
+    font-size: 15px;
+    text-align: center;
+
+}
+.norway__video {
+}
+.background__video {
+    /* background-color: url(../img/norway/video-background.jpg); */
+    
+}
+.icon__play {
+    /* margin-top: -200px; */
+    
+}
+.icon__play-link {
+}
+.icon__play-image {
+   width: 100px; 
+}
+.icon__play-tittle {
+}
