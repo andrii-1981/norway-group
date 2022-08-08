@@ -56,3 +56,18 @@
 .icon__play-image {
    width: 100px; 
 }
+.norway__video {
+    background-image: url(../img/norway/video-background.jpg);
+    /* background-repeat: no-repeat;
+    background-position: left,50%; */
+    /* background-size: auto auto, cover; */
+    height: 660px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.icon__play-tittle {
+    color: var(--h5-text-color);
+}
