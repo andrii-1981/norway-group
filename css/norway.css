@@ -1,5 +1,4 @@
-.norway {
-}
+
 .norway__container {
     margin-top: 100px;
 }
@@ -9,8 +8,7 @@
 .container__image {
     flex: 0 1 33%;
 }
-.image__a {
-}
+
 .container__norway-tittle {
     flex: 0 1 33%;
     
@@ -59,19 +57,7 @@
     text-align: center;
 
 }
-.norway__video {
-}
-.background__video {
-    /* background-color: url(../img/norway/video-background.jpg); */
-    
-}
-.icon__play {
 
-}
-.icon__play-link {
-}
 .icon__play-image {
    width: 100px; 
-}
-.icon__play-tittle {
 }
