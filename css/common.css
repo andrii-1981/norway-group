@@ -1,10 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+ @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"); 
+ @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"); 
 
-/* потрібно видалити зайвий розмір */
-
-@import url(https://fonts.googleapis.com/css?family=Roboto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-
-* {
+ * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,8 +9,6 @@
 }
 
 :root {
-  
-
   --h2-text-color: rgb(111, 115, 128);
   --h3-text-color: rgb(80, 81, 85);
   --h5-text-color: rgb(255, 255, 255);
@@ -23,11 +18,13 @@
   --join-color: rgba(255,255,255,0.6);
   --join-backgrnd: #232428;
   --input-backgrnd: rgb(45, 46, 52);
-
+  
+    
   --playfair: "Playfair Display", serif;
-  --text-color: #fff;
   --dash-color: rgb(238, 46, 20);
   --background-color: #232428;
+  --text-color-white: #ffffff;
+  
 }
 
 h2 {
