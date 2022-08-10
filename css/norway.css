@@ -1,6 +1,6 @@
 .norway__container {
     overflow: hidden;
-    margin: 100px 0px 100px 0px;
+    margin: 100px auto;
 }
 @media (min-width: 767.98px) {
     .container__flex {
@@ -16,10 +16,10 @@
     font-weight: bold;
 }
 .dash {
-    color: var(--span-h2-color);
+    color: var(--dash-color);
 }
 .norway h3 {
-    color: var(--h3-text-color);
+    color: var(--text-color);
     padding: 20px 0px 40px 0px;
 }
 .norway p {
@@ -51,7 +51,7 @@
     padding-bottom: 20px;
 }
 .item__subtext {
-    color: var(--p-text-color);
+    color: var(--text-color);
     font-weight: 400;
     line-height: 24px;
     font-size: 15px;
@@ -61,8 +61,10 @@
 .video__container {
     background-image: url(../img/norway/video-background.jpg);
     height: 414px;
-    background-position-x: 50%;
-    background-position-y: 60.16%;
+    /* background-position-x: 50%;
+    background-position-y: 60.16%; */
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 .icon__play-image {
     width: 50px;
@@ -70,7 +72,7 @@
     padding: 182px 0px 0px 0px;
 }
 .icon__play-tittle {
-    color: var(--h5-text-color);
+    color: var(--text-color-background);
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.36px;
