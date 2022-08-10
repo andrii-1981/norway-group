@@ -1,15 +1,12 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  -->
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
      <link rel="shortcut icon" href="img/norway-icon-favicon.png" type="image/x-icon" />
 
@@ -17,41 +14,15 @@
 
      <title>Norway</title>
 
-     <style>
-          .material-icons-round {
-               /* to make visible icons in header */
-               font-family: 'Material Icons';
-               font-weight: normal;
-               font-style: normal;
-               font-size: 24px;
-               /* Preferred icon size */
-               display: inline-block;
-               line-height: 1;
-               text-transform: none;
-               letter-spacing: normal;
-               word-wrap: normal;
-               white-space: nowrap;
-               direction: ltr;
-
-               /* Support for all WebKit browsers. */
-               -webkit-font-smoothing: antialiased;
-               /* Support for Safari and Chrome. */
-               text-rendering: optimizeLegibility;
-
-               /* Support for Firefox. */
-               -moz-osx-font-smoothing: grayscale;
-
-               /* Support for IE. */
-               font-feature-settings: 'liga';
-          }
-     </style>
-
      <link rel="stylesheet" href="css/places/places_style.css">
+     <script src="js/header/header.js"></script>
+
+     <script src="js/places/places_js.js"></script>
      <script src="js/places/places_js.js"></script>
 
      <!-- <link rel="stylesheet" href="/css/styles.css">
      <link rel="stylesheet" href="css/places/places_style.css"> -->
-     <script src="js/places/places_js.js"></script>
+
 
 
 
@@ -59,70 +30,90 @@
 
 <body>
      <!-- Block 1 "header" Oleg starts here -->
-     <header class="header">
-          <!-- need to refresh page? -->
-          <button id="top" onClick="window.location.reload();"><img src="img/norway-logo.jpg"
-                    alt="Logo; Press to refresh page"></button>
-          <!-- <div class="logo"><a href="#top"><img src="img/norway-logo.jpg" alt="Logo, go to top"> </a> </div>-->
-          <div class="header__topnav">
-               <div class="navigation-link">
-                    <a href="#about_cards">About us</a>
-                    <a href="#itinerary">Itinerary</a>
-                    <a href="#testimonials">Testimonials</a>
-                    <a href="#blog">Blog</a>
-                    <a href="#contacts">Contacts </a>
-               </div>
-               <div class="join-link">
-                    <a href="#join">Join us<span class="material-icons-round right-arrow"> trending_flat </span>
-                    </a>
-               </div>
-               <div class="burger-nav-icon">
-                    <a href="#open-top-nav"> <span class="material-icons-round"> menu </span></a>
-                    <a href="#close-top-nav"> <span class="material-icons-round"> close </span></a>
-               </div>
-          </div>
-          <div class="header__section-name">
-               <h1>
-                    <span class="long-dash">━</span><span class="section-heading">YOUR PERFECT JORNEY TO</span>
-               </h1>
-               <h2 class="section-subheading norway">Norway</h2>
-          </div>
+     <header>
+          <div class="container" id="toptop">
+               <nav class="header-top">
+                    <div class="top-items">
+                         <div class="logo-button">
+                              <button id="top" onClick="window.location.reload();">
+                                   <img width="200" src="img/norway-logo.png" alt="Refresh" />
+                              </button>
+                         </div>
+                         <div class="burger-button">
+                              <a href="javascript:void(0);" onclick="mobileMenu()">
+                                   <div class="container-burger" onclick="animateIcon(this)">
+                                        <div class="bar1"></div>
+                                        <div class="bar2"></div>
+                                        <div class="bar3"></div>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
 
-          <div class="header__goto-norway-video">
-               <div class="icon-video">
-                    <img width=24 src="img/header/icon-video-red.svg" alt="press to see video">
-               </div>
-               <div class="watch-video">
-                    <p><span class="long-dash">━</span>
-                         <a href="#norway__items">Watch the promo video!</a>
-                    </p>
-               </div>
-          </div>
+                    <div class="nav-menu" id="myLinks">
+                         <div><a href="#about_cards" class="navlink">About Us</a></div>
+                         <div><a href="#itinerary" class="navlink">Itinerary</a></div>
+                         <div><a href="#testimonials" class="navlink">Testimonials</a></div>
+                         <div><a href="#blog" class="navlink">Blog</a></div>
+                         <div><a href="#contacts" class="navlink">Contacts</a></div>
+                         <div>
+                              <a href="#join" class="join">Join Us&nbsp;
+                                   <span class="material-symbols-outlined trending_flat">
+                                        trending_flat
+                                   </span></a>
+                         </div>
+                    </div>
+               </nav>
 
-          <div class="header__intro-video">
-               <video width="500" controls poster="img/header/press-to-play-video.jpg">
-                    <source type="video/mp4" src="video/introducing-norway.mp4">
-               </video>
-               <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/miJaLj799is" title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe> -->
-          </div>
+               <br />
+               <div id="desktop">
+                    <div class="header-middle">
+                         <div class="intro-heading">
+                              <p class="jorney">
+                                   <span class="long-dash"> ━ </span> YOUR PERFECT JORNEY TO
+                              </p>
+                              <h1 class="norway">Norway</h1>
+                         </div>
+                    </div>
 
-          <div class="header__next-trip">
-               <h3>Next Trip to Norway</h3>
-               <div class="price-date">
-                    <p>$2300</p>
-                    <p>17 NOV. - 22 NOV.</p>
-               </div>
-               <p class="travel">10 days of travel and 5 unique places in Norway are waiting for us ...</p>
-               <div class="read">
-                    <!-- <div><a href="#places">Read more<span class="material-icons-round right-arrow"> trending_flat
-                         </span></a></div>
-                    </a> -->
-                    <div><a href="#places">Read more</a></div>
-                    <div style="background-color: rgb(235, 241, 239);"><a href="#places"><img width=24
-                                   src="img/header/icon-right-arrow-white.svg" alt="right arrow"></a></div>
+                    <div class="header-bottom">
+                         <div class="goto-norway-video">
+                              <div>
+                                   <img class="icon-video" width="20" src="img/header/icon-video-red.svg"
+                                        alt="press to see video" />
+                              </div>
+                              <div>
+                                   <span class="long-dash">━</span>
+                                   <a href="#norway__items" class="goto-watch">Watch the promo video!</a>
+                              </div>
+                         </div>
+
+                         <div class="right-side">
+                              <div class="intro-video">
+                                   <video controls poster="img/header/press-to-play-video.jpg">
+                                        <source type="video/mp4" src="video/introducing-norway.mp4" />
+                                   </video>
+                              </div>
+
+                              <div class="next-trip">
+                                   <p class="trip-heading">Next Trip to Norway</p>
+                                   <p class="price-date">
+                                        <span>$2300 &nbsp;</span>
+                                        <span>&nbsp;17 NOV. - 22 NOV.</span>
+                                   </p>
+                                   <p class="travel">
+                                        10 days of travel and 5 unique places in Norway are waiting
+                                        for us ...
+                                   </p>
+                                   <p class="read">
+                                        <a href="#places">
+                                             Read more
+                                             <img src="img/header/icon-right-arrow-white.svg" alt="->" />
+                                        </a>
+                                   </p>
+                              </div>
+                         </div>
+                    </div>
                </div>
           </div>
      </header> <!-- End of Oleg`s section -->
@@ -200,134 +191,127 @@
 
           <!-- Block 4 "norway" Hanna Zinaienkova starts here -->
           <section class="norway">
-            <div class="norway__container">
-              <div class="container__flex">
-                  <div class="container__image">
-                    <img width="300" src="img/norway/norway-a.png" alt="a" class="image__a" />
-                  </div>
-                  <div class="container__norway-tittle">
-                    <h2 class="norvay__tittle">
-                      <span class="dash">━</span>about norway
-                    </h2>
-                    <h3 class="norvay__subtittle">Land of The Midnight Sun</h3>
-                    <p class="norvay__text">
-                            It is believed that the name of this distinctive country and one of
-                            the most breathtaking places on our planet was given by the
-                            Old-Norse word Norðrvegr, literally meaning "way to the north."
-                    </p>
-                  </div>
-                  <div class="container__norway-text">
-                    <p class="norvay__text">
-                            Norway is famous for green forests and mountains, pristine glaciers,
-                            noisy and cool waterfalls, lakes, beautiful fjords, white nights,
-                            and the polar lights. The beauty of Norway cannot be described in
-                            words!
-                    </p>
-                    <p class="norvay__text">
-                            Norway is also known for its striking landscapes, hunting, fishing,
-                            interesting and entertaining history, and culture. All this attracts
-                            travel lovers who come to Norway regardless of the season from all
-                            over the world.
-                    </p>
-                  </div>
-                </div>
-                <div id="norway__items" class="norway__items">
-                    <div class="item__block">
-                       <h4 class="item__number">17,000+</h4>
-                       <p class="item__subtext">Fjords</p>
+               <div class="norway__container">
+                    <div class="container__flex">
+                         <div class="container__image">
+                              <img width="300" src="img/norway/norway-a.png" alt="a" class="image__a" />
+                         </div>
+                         <div class="container__norway-tittle">
+                              <h2 class="norvay__tittle">
+                                   <span class="dash">━</span>about norway
+                              </h2>
+                              <h3 class="norvay__subtittle">Land of The Midnight Sun</h3>
+                              <p class="norvay__text">
+                                   It is believed that the name of this distinctive country and one of
+                                   the most breathtaking places on our planet was given by the
+                                   Old-Norse word Norðrvegr, literally meaning "way to the north."
+                              </p>
+                         </div>
+                         <div class="container__norway-text">
+                              <p class="norvay__text">
+                                   Norway is famous for green forests and mountains, pristine glaciers,
+                                   noisy and cool waterfalls, lakes, beautiful fjords, white nights,
+                                   and the polar lights. The beauty of Norway cannot be described in
+                                   words!
+                              </p>
+                              <p class="norvay__text">
+                                   Norway is also known for its striking landscapes, hunting, fishing,
+                                   interesting and entertaining history, and culture. All this attracts
+                                   travel lovers who come to Norway regardless of the season from all
+                                   over the world.
+                              </p>
+                         </div>
                     </div>
-                    <div class="item__block">
+                    <div id="norway__items" class="norway__items">
+                         <div class="item__block">
+                              <h4 class="item__number">17,000+</h4>
+                              <p class="item__subtext">Fjords</p>
+                         </div>
+                         <div class="item__block">
                               <h4 class="item__number">36</h4>
                               <p class="item__subtext">Kilometers of coastal strip</p>
-                    </div>
-                    <div class="item__block">
+                         </div>
+                         <div class="item__block">
                               <h4 class="item__number">450,000+</h4>
                               <p class="item__subtext">Freshwater lakes</p>
-                    </div>
-                    <div class="item__block">
+                         </div>
+                         <div class="item__block">
                               <h4 class="item__number">10,000</h4>
                               <p class="item__subtext">Waterfalls</p>
+                         </div>
                     </div>
-                </div>
-                <div class="norway__video video__container">                     
-                    <a href="https://www.youtube.com/" class="icon__play-link">
-                         <img src="./img/norway/icon-play.png" alt="play" class="icon__play-image" />
-                    </a>
-                    <h5 class="icon__play-tittle">
-                         Want to go fishing in Tromsø, Norway?
-                    </h5>
-                </div>     
+                    <div class="norway__video video__container">
+                         <a href="https://www.youtube.com/" class="icon__play-link">
+                              <img src="./img/norway/icon-play.png" alt="play" class="icon__play-image" />
+                         </a>
+                         <h5 class="icon__play-tittle">
+                              Want to go fishing in Tromsø, Norway?
+                         </h5>
+                    </div>
+               </div>
           </section>
           <!--End of block 4 "norway" Hanna Zinaienkova-->
 
           <!-- Block 5 "places" Leichenko Evgeniy starts here -->
           <section class="places">
-               <div class="tab">
-                    <button class="tablinks" onclick="openCity(event, 'Oslo')">Oslo</button>
-                    <button class="tablinks" onclick="openCity(event, 'Trondheim')">
-                         Trondheim
-                    </button>
-                    <button class="tablinks" onclick="openCity(event, 'Bodø')">Bodø</button>
-                    <button class="tablinks" onclick="openCity(event, 'Lofoten_Islands')">
-                         Lofoten Islands
-                    </button>
-                    <button class="tablinks" onclick="openCity(event, 'Tromsø')">
-                         Tromsø
-                    </button>
-               </div>
-               <div class="places__wrapper">
-                    <div id="Oslo" class="tabcontent">
-                         <h3>Oslo - First point</h3>
-                         <p>The Capital and Largest City of Norway</p>
-                         We start our journey from Oslo, the capital of Norway. On a walking
-                         tour, you will see the opera house, parliament, the royal palace, and
-                         more.</p>
-                         <img src="img/places/oslo.jpg" alt="oslo" />
+               <div class="places__container">
+                    <div class="tab">
+                         <button class="tablinks" onclick="openCity(event, 'Oslo')">Oslo</button>
+                         <button class="tablinks" onclick="openCity(event, 'Trondheim')">Trondheim</button>
+                         <button class="tablinks" onclick="openCity(event, 'Bodø')">Bodø</button>
+                         <button class="tablinks" onclick="openCity(event, 'Lofoten_Islands')">Lofoten Islands</button>
+                         <button class="tablinks" onclick="openCity(event, 'Tromsø')">Tromsø</button>
                     </div>
-
-                    <div id="Trondheim" class="tabcontent">
-                         <h3>Trondheim - Second point</h3>
-                         <p>The First Capital With the Royal Residence</p>
-                         <p>
+                    <div class="places__wrapper">
+                         <div id="Oslo" class="tabcontent">
+                              <h3>Oslo - First point</h3>
+                              <p>The Capital and Largest City of Norway</p>
+                              We start our journey from Oslo, the capital of Norway. On a walking
+                              tour, you will see the opera house, parliament, the royal palace, and
+                              more.</p>
+                              <img src="img/places/oslo.jpg" alt="oslo" />
+                         </div>
+                         <div id="Trondheim" class="tabcontent">
+                              <h3>Trondheim - Second point</h3>
+                              <p>The First Capital With the Royal Residence</p>
+                              <p>
                               The main Christian landmark of Norway, the Nidaros Cathedral is
                               located here. The architectural sign of the new era is a high TV tower
                               with a revolving restaurant.
-                         </p>
-                         <img src="img/places/trondheim.jpg" alt="trondheim" />
-                    </div>
-
-                    <div id="Bodø" class="tabcontent">
-                         <h3>Bodø - Third point</h3>
-                         <p>Unique Fishing Spot in Fascinating Scenery</p>
-                         <p>
+                              </p>
+                              <img src="img/places/trondheim.jpg" alt="trondheim" />
+                         </div>
+                         <div id="Bodø" class="tabcontent">
+                              <h3>Bodø - Third point</h3>
+                              <p>Unique Fishing Spot in Fascinating Scenery</p>
+                              <p>
                               We've left "urban" Norway, and Bodø is our first stop for no
                               sightseeing. We will simply go fishing, enjoy the fresh air, and try
                               dishes with salmon and trout.
-                         </p>
-                         <img src="img/places/bodo.jpg" alt="bodo" />
-                    </div>
-
-                    <div id="Lofoten_Islands" class="tabcontent">
-                         <h3>Lofoten Islands - Fourth point</h3>
-                         <p>Stunning Place Beyond the Arctic circle</p>
-                         <p>
+                              </p>
+                              <img src="img/places/bodo.jpg" alt="bodo" />
+                         </div>
+                         <div id="Lofoten_Islands" class="tabcontent">
+                              <h3>Lofoten Islands - Fourth point</h3>
+                              <p>Stunning Place Beyond the Arctic circle</p>
+                              <p>
                               The islands are located in the harsh waters of the Norwegian Sea. It
                               is a land of wild nature, majestic mountains, fjords, and long sandy
                               beaches.
-                         </p>
-                         <img src="img/places/lofoten_islands.jpg" alt="lofoten_islands" />
-                    </div>
-
-                    <div id="Tromsø" class="tabcontent">
-                         <h3>Tromsø - Final point</h3>
-                         <p>Spot for Hunting the Northern Lights</p>
-                         <p>
+                              </p>
+                              <img src="img/places/lofoten_islands.jpg" alt="lofoten_islands" />
+                         </div>
+                         <div id="Tromsø" class="tabcontent">
+                              <h3>Tromsø - Final point</h3>
+                              <p>Spot for Hunting the Northern Lights</p>
+                              <p>
                               The largest Norwegian city in the Arctic Circle is also called “Paris
                               of the North”. The main attractions are the Polar Museum and the
                               Arctic Cathedral.
-                         </p>
-                         <img src="img/places/tromso.jpg" alt="tromso" />
-                    </div>
+                              </p>
+                              <img src="img/places/tromso.jpg" alt="tromso" />
+                         </div>
+               </div>
                </div>
           </section>
 
@@ -533,8 +517,7 @@
                               alt="facebook"></a>
                     <a href="https://www.instagram.com/"><img width="20" src="img/footer/instagram.jpg"
                               alt="instagram"></a>
-                    <a href="https://www.youtube.com/"><img width="20" src="img/footer/youtube.jpg"
-                              alt="youtube"></a>
+                    <a href="https://www.youtube.com/"><img width="20" src="img/footer/youtube.jpg" alt="youtube"></a>
                </div>
                <div class="rights">
                     <p class="rights">All rights Reserved</p>
