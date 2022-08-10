@@ -1,6 +1,8 @@
 .testimonials__container {
-    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    margin: 100px 0;
     background-image: url(../img/testimonials/testimonials_background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,14 +22,14 @@
 }
 
 .travelers {
-    color: #505155;
+    color: var(--p-text-color);
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 40px;
 }
 
 .testimonials__text {
-    color: #505155;
+    color: var(--p-text-color);
     margin-bottom: 40px;
 }
 
@@ -35,6 +37,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin: 0 auto;
 }
 
 .experience__image, .experience__name, .experience__text {
@@ -48,10 +51,30 @@
 .experience__text {
     padding: 0 50px;
     margin-bottom: 20px;
+    color: var(--p-text-color);
 }
 
 .experience__date {
     margin-bottom: 30px;
+}
+
+@media (min-width: 600px) {
+    .testimonials__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .travelers{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .testimonials__text {
+        font-size: 14px;
+
+    }
+    .experience__image {
+        margin: 0 auto;
+    }
 }
 
 
