@@ -8,11 +8,6 @@
     background-repeat: no-repeat;
     
 }
-.dash {
- color: var(--span-h2-color);
-
-}
-
 .testimonials__header {
     color: var(--h2-text-color);
     text-transform: uppercase;
