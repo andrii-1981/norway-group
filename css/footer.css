@@ -1,0 +1,49 @@
+.footer__container {
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    background-image: url(../img/footer/mountain-wallpaper.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.footer__contacts {
+    background-color: rgba(0, 0, 0, 0.65);
+    font-size: 24px;
+    color: var(--h5-text-color);
+    display: inline-block; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.footer__contacts-p {
+    font-size: 15px;
+
+}
+
+.footer__links {
+    background-color: black;
+}
+
+.logo__link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 14px;
+}
+
+.logo__link:hover {
+    color: var(--h5-text-color);
+
+}
+
+.footer__banner {
+    background-color: black;
+}
+
+.created, .rights {
+    color: var(--h5-text-color);
+    font-size: 13px;
+}
+
