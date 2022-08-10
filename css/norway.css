@@ -1,6 +1,6 @@
 .norway__container {
     overflow: hidden;
-    margin: 100px 0px 100px 0px;
+    margin: 100px auto;
 }
 @media (min-width: 767.98px) {
     .container__flex {
@@ -61,8 +61,10 @@
 .video__container {
     background-image: url(../img/norway/video-background.jpg);
     height: 414px;
-    background-position-x: 50%;
-    background-position-y: 60.16%;
+    /* background-position-x: 50%;
+    background-position-y: 60.16%; */
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 .icon__play-image {
     width: 50px;
