@@ -1,11 +1,12 @@
-.norway {
+.norway__container {
     overflow: hidden;
+    margin: 100px 0px 100px 0px;
 }
 @media (min-width: 767.98px) {
     .container__flex {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px; 
+        gap: 40px; 
         align-content: space-between;
     }
 }
@@ -19,9 +20,11 @@
 }
 .norway h3 {
     color: var(--h3-text-color);
+    padding: 20px 0px 40px 0px;
 }
 .norway p {
     color: var(--p-text-color);
+    padding: 0px 0px 28px 0px;
 }
 @media (min-width: 767.98px) {
     .norway__items {
@@ -32,9 +35,12 @@
 }
 @media (min-width: 1092px) {
     .norway__items {
-        display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: none;
     }
+}
+.norway__items {
+    padding: 28px 0px 28px 0px;
 }
 .item__number {
     color: var(--numbers-color);
@@ -42,6 +48,7 @@
     line-height: 60px;
     font-size: 60px;
     text-align: center;
+    padding-bottom: 20px;
 }
 .item__subtext {
     color: var(--p-text-color);
@@ -49,6 +56,7 @@
     line-height: 24px;
     font-size: 15px;
     text-align: center;
+    padding: 12px 0px 0px 0px;
 }
 .video__container {
     background-image: url(../img/norway/video-background.jpg);
@@ -56,7 +64,6 @@
     background-position-x: 50%;
     background-position-y: 60.16%;
 }
-
 .icon__play-image {
     width: 50px;
     margin: auto;
