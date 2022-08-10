@@ -12,12 +12,22 @@
 }
 
 :root {
+  
+
   --h2-text-color: rgb(111, 115, 128);
   --h3-text-color: rgb(80, 81, 85);
   --h5-text-color: rgb(255, 255, 255);
   --p-text-color: rgb(80, 81, 85);
   --numbers-color: rgb(35, 36, 40);
   --span-h2-color: rgb(238, 46, 20);
+  --join-color: rgba(255,255,255,0.6);
+  --join-backgrnd: #232428;
+  --input-backgrnd: rgb(45, 46, 52);
+
+  --playfair: "Playfair Display", serif;
+  --text-color: #fff;
+  --dash-color: rgb(238, 46, 20);
+  --background-color: #232428;
 }
 
 h2 {

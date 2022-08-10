@@ -4,13 +4,20 @@
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
      <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">  -->
+=======
+     <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+>>>>>>> 9b81477d77d5cd24eb1b5577eb0469bdc5fa529a
      <link rel="shortcut icon" href="img/norway-icon-favicon.png" type="image/x-icon" />
      <link rel="stylesheet" href="css/index.css">
      <title>Norway</title>
+<<<<<<< HEAD
      <style>
           .material-icons-round {
                /* to make visible icons in header */
@@ -40,9 +47,21 @@
           }
      </style>
      <script src="js/places/places_js.js"></script>
+=======
+
+     <script src="js/header/header.js"></script>
+     <script src="js/places/places_js.js"></script>
+
+     
+
+
+
+
+>>>>>>> 9b81477d77d5cd24eb1b5577eb0469bdc5fa529a
 </head>
 <body>
      <!-- Block 1 "header" Oleg starts here -->
+<<<<<<< HEAD
      <header class="header">
           <!-- need to refresh page? -->
           <button id="top" onClick="window.location.reload();"><img src="img/norway-logo.jpg"
@@ -78,9 +97,104 @@
                <div class="watch-video">
                     <p><span class="long-dash">━</span>
                          <a href="#norway__items">Watch the promo video!</a>
+=======
+     <header>
+          <div class="container" id="toptop">
+            <!-- ============ -->
+            <nav class="header-top">
+              <div class="top-items">
+                <div class="logo-button">
+                  <button id="top" onClick="window.location.reload();">
+                    <img width="200" src="img/norway-logo.png" alt="Refresh" />
+                  </button>
+                </div>
+                <div class="burger-button">
+                  <a href="javascript:void(0);" onclick="mobileMenu()">
+                    <div class="container-burger" onclick="animateIcon(this)">
+                      <div class="bar1"></div>
+                      <div class="bar2"></div>
+                      <div class="bar3"></div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+    
+              <div class="nav-menu" id="myLinks">
+                <div><a href="#about_cards" class="navlink">About Us</a></div>
+                <div><a href="#itinerary" class="navlink">Itinerary</a></div>
+                <div><a href="#testimonials" class="navlink">Testimonials</a></div>
+                <div><a href="#blog" class="navlink">Blog</a></div>
+                <div><a href="#contacts" class="navlink">Contacts</a></div>
+                <div>
+                  <a href="#join" class="join"
+                    >Join Us&nbsp;
+                    <span class="material-symbols-outlined trending_flat">
+                      trending_flat
+                    </span></a
+                  >
+                </div>
+              </div>
+            </nav>
+    
+            <br />
+            <div id="desktop">
+              <div class="header-middle">
+                <div class="intro-heading">
+                  <p class="jorney">
+                    <span class="long-dash"> ━ </span> YOUR PERFECT JORNEY TO
+                  </p>
+                  <h1 class="norway">Norway</h1>
+                </div>
+              </div>
+    
+              <div class="header-bottom">
+                <div class="goto-norway-video">
+                  <div>
+                    <img
+                      class="icon-video"
+                      width="20"
+                      src="img/header/icon-video-red.svg"
+                      alt="press to see video"
+                    />
+                  </div>
+                  <div>
+                    <span class="long-dash">━</span>
+                    <a href="#norway__items" class="goto-watch"
+                      >Watch the promo video!</a
+                    >
+                  </div>
+                </div>
+    
+                <div class="right-side">
+                  <div class="intro-video">
+                    <video controls poster="img/header/press-to-play-video.jpg">
+                      <source type="video/mp4" src="video/introducing-norway.mp4" />
+                    </video>
+                  </div>
+    
+                  <div class="next-trip">
+                    <p class="trip-heading">Next Trip to Norway</p>
+                    <p class="price-date">
+                      <span>$2300 &nbsp;</span>
+                      <span>&nbsp;17 NOV. - 22 NOV.</span>
+>>>>>>> 9b81477d77d5cd24eb1b5577eb0469bdc5fa529a
                     </p>
-               </div>
+                    <p class="travel">
+                      10 days of travel and 5 unique places in Norway are waiting
+                      for us ...
+                    </p>
+                    <p class="read">
+                      <a href="#places">
+                        Read more
+                        <img src="img/header/icon-right-arrow-white.svg" alt="->" />
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+<<<<<<< HEAD
           <div class="header__intro-video">
                <video width="500" controls poster="img/header/press-to-play-video.jpg">
                     <source type="video/mp4" src="video/introducing-norway.mp4">
@@ -107,6 +221,10 @@
                </div>
           </div>
      </header> <!-- End of Oleg`s section -->
+=======
+        </header> <!-- End of Oleg`s section -->
+
+>>>>>>> 9b81477d77d5cd24eb1b5577eb0469bdc5fa529a
      <main>
           <!--Block 2 "about" Volodymir Iluk starts here-->
           <section class="about" id="about_cards">
@@ -403,7 +521,7 @@
                                              </path>
                                         </g>
                                    </svg></div>
-                              <div class="form__field"><input type="submit" value="Request a quote"></div>
+                              <div><input type="submit" value="Request a quote"></div>
                          </form>
                     </div>
                </div>
@@ -468,17 +586,17 @@
           <section class="footer__container" id="contacts">
                <div class="footer__contacts">
                     <img class="footer__email__logo" src="img/footer/email.jpg" alt="email">
-                    <h2 class="footer__contacts">Write Us</h2>
+                    <h2 class="footer__contacts__h">Write Us</h2>
                     <p class="footer__contacts-p">norway-tour@email.com</p>
                </div>
                <div class="footer__contacts">
                     <img class="footer__adress__logo" src="img/footer/location.jpg" alt="adress">
-                    <h2 class="footer__contacts">Visit Us</h2>
+                    <h2 class="footer__contacts__h">Visit Us</h2>
                     <p class="footer__contacts-p">Tollbugata 15C, 0152 Oslo</p>
                </div>
                <div class="footer__contacts">
-                    <img class="footer__phone" src="img/footer/phone.jpg" alt="phone">
-                    <h2 class="footer__contacts">Call Us</h2>
+                    <img class="footer__phone__logo" src="img/footer/phone.jpg" alt="phone">
+                    <h2 class="footer__contacts__h">Call Us</h2>
                     <p class="footer__contacts-p">+1 (234) 567 89 00</p>
                </div>
           </section>
@@ -500,11 +618,15 @@
                     <p class="created"> © Created by</p>
                </div>
                <div class="social__networks">
-                    <a href="https://www.facebook.com/"><img width="20" src="img/footer/facebook.jpg"
+                    <a href="https://www.facebook.com/"><img class="social__networks__footer" src="img/footer/facebook.jpg"
                               alt="facebook"></a>
-                    <a href="https://www.instagram.com/"><img width="20" src="img/footer/instagram.jpg"
+                    <a href="https://www.instagram.com/"><img class="social__networks__footer" src="img/footer/instagram.jpg"
                               alt="instagram"></a>
+<<<<<<< HEAD
                     <a href="https://www.youtube.com/"><img width="20" src="img/footer/youtube.jpg" alt="youtube"></a>
+=======
+                    <a href="https://www.youtube.com/"><img class="social__networks__footer" src="img/footer/youtube.jpg" alt="youtube"></a>
+>>>>>>> 9b81477d77d5cd24eb1b5577eb0469bdc5fa529a
                </div>
                <div class="rights">
                     <p class="rights">All rights Reserved</p>

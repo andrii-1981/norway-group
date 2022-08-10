@@ -1,0 +1,44 @@
+#join {
+    background-image: url(../img/contacts/man-by-sea.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    position: relative;
+    
+}
+
+.join__container {
+    background-color: var(--join-backgrnd);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 272px;
+    max-width: 719px;
+}
+
+.join__header {
+    color: var(--join-color);
+    font-weight: 500;
+}
+
+.join__subheader {
+    color: var(--h5-text-color);
+}
+
+.join__text {
+    color: var(--join-color);
+}
+
+.form__field {
+    margin-bottom: 24px;
+}
+
+.form__field > input {
+    background-color: var(--input-backgrnd);
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+    display: block;
+    border-style: none;
+    margin-top: 12px;
+}
