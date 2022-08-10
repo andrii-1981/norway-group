@@ -18,6 +18,9 @@
   --p-text-color: rgb(80, 81, 85);
   --numbers-color: rgb(35, 36, 40);
   --span-h2-color: rgb(238, 46, 20);
+  --join-color: rgba(255,255,255,0.6);
+  --join-backgrnd: #232428;
+  --input-backgrnd: rgb(45, 46, 52);
 }
 
 h2 {
