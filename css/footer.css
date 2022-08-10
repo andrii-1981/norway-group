@@ -1,13 +1,20 @@
 .footer__container {
-    margin: auto;
-    padding: 0;
-    width: 100%;
+    width: 305px;
+    height: 995px;
     background-image: url(../img/footer/mountain-wallpaper.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
+.footer__email__logo,
+.footer__adress__logo,
+.footer__phone__logo{
+    width: 50px;
+    height: 50px;
+}
 .footer__contacts {
+    width: 275px;
+    height: 235px;
     background-color: rgba(0, 0, 0, 0.65);
     font-size: 24px;
     color: var(--h5-text-color);
@@ -18,9 +25,14 @@
     left: 0;
 }
 
+.footer__contacts__h {
+    font-size: 24px;
+    color: var(--h5-text-color);
+}
+
 .footer__contacts-p {
     font-size: 15px;
-
+    color: var(--h5-text-color);
 }
 
 .footer__links {
@@ -42,6 +54,9 @@
     background-color: black;
 }
 
+.social__networks__footer {
+    width: 30px;
+}
 .created, .rights {
     color: var(--h5-text-color);
     font-size: 13px;
