@@ -1,20 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"); */
 /* @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"); */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-:root {
+ */
+/* :root {
   font-family: "Roboto", sans-serif;
   --playfair: "Playfair Display", serif;
   --text-color: #fff;
   --dash-color: rgb(238, 46, 20);
   --background-color: #232428;
   color: var(--text-color);
-}
+} */
 
 .material-symbols-outlined {
   /* Google CSS for icons */
