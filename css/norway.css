@@ -50,16 +50,17 @@
     font-size: 15px;
     text-align: center;
 }
-.norway__video {
+.video__container {
     background-image: url(../img/norway/video-background.jpg);
-    height: 415px;
+    height: 414px;
+    background-position-x: 50%;
+    background-position-y: 60.16%;
 }
-.icon__play {
-    align-content: center;
-}
+
 .icon__play-image {
-    width: 100px;
+    width: 50px;
     margin: auto;
+    padding: 182px 0px 0px 0px;
 }
 .icon__play-tittle {
     color: var(--h5-text-color);
@@ -69,4 +70,22 @@
     line-height: 19.2px;
     text-align: center;
     font-weight: bold;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+@media (min-width: 767.98px) {
+    .video__container {
+     height: 531px;
+    }
+    .icon__play-image {
+        padding: 240px 0px 0px 0px;
+    }
+}
+@media (min-width: 1092px) {
+    .video__container {
+     height: 660px;
+    }
+    .icon__play-image {
+        padding: 305px 0px 0px 0px;
+    }
 }
