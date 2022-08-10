@@ -1,3 +1,6 @@
+.norway {
+    overflow: hidden;
+}
 @media (min-width: 767.98px) {
     .container__flex {
         display: grid;
@@ -49,6 +52,14 @@
 }
 .norway__video {
     background-image: url(../img/norway/video-background.jpg);
+    height: 415px;
+}
+.icon__play {
+    align-content: center;
+}
+.icon__play-image {
+    width: 100px;
+    margin: auto;
 }
 .icon__play-tittle {
     color: var(--h5-text-color);
