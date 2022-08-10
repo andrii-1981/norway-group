@@ -26,8 +26,6 @@
   --text-color: #fff;
   --dash-color: rgb(238, 46, 20);
   --background-color: #232428;
-  color: var(--text-color);
-
 }
 
 h2 {
