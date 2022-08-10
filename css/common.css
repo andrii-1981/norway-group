@@ -21,12 +21,13 @@
   --join-color: rgba(255,255,255,0.6);
   --join-backgrnd: #232428;
   --input-backgrnd: rgb(45, 46, 52);
+
   font-family: "Roboto", sans-serif;
   --playfair: "Playfair Display", serif;
   --text-color: #fff;
   --dash-color: rgb(238, 46, 20);
   --background-color: #232428;
-  color: var(--text-color);
+  /* color: var(--text-color); */
 
 }
 
