@@ -1,13 +1,24 @@
+.testimonials {
+    /* background-image: url(../img/testimonials/testimonials_background.jpeg); */
+    background-color: rgba(247,247,247,255);
+
+}
+.carousel-indicators [data-bs-target] {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: 0 15px -30px 15px;
+}
+
 .testimonials__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
-    background-image: url(../img/testimonials/testimonials_background.jpeg);
-    background-size: cover;
-    
 }
+
 .testimonials__header {
     color: var(--h2-text-color);
     text-transform: uppercase;
@@ -35,7 +46,9 @@
     margin: 0 auto;
 }
 
-.experience__image, .experience__name, .experience__text {
+.experience__image,
+.experience__name,
+.experience__text {
     margin-top: 30px;
 }
 
@@ -54,23 +67,23 @@
 }
 
 @media (min-width: 600px) {
-    .testimonials__container{
+    .testimonials__container {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .travelers{
+
+    .travelers {
         font-size: 16px;
         font-weight: 700;
     }
+
     .testimonials__text {
         font-size: 14px;
 
     }
+
     .experience__image {
         margin: 0 auto;
     }
 }
-
-
-
