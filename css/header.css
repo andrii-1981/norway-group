@@ -1,35 +1,17 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"); */
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
- */
-/* :root {
-  font-family: "Roboto", sans-serif;
-  --playfair: "Playfair Display", serif;
-  --text-color: #fff;
-  --dash-color: rgb(238, 46, 20);
-  --background-color: #232428;
-  color: var(--text-color);
-} */
 .material-symbols-outlined {
   /* Google CSS for icons */
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 h1 {
-  font-family: var(--playfair);
+  font-family: 'Playfair Display', serif;
+  color: rgb(231, 217, 140)
 }
 
 header {
-  /* display: flex;
-  width: 100%;
-  height: 100%; */
-  color: var(--text-color);
-  background-image: url(img/header/norway-mountain-sea.jpg)
+  color: var(--text-color-background);
+  background: url(/img/header/norway-mountain-sea.jpg) no-repeat center center scroll;
+  background-size: cover;
   /* background-color: var(--background-color); */
 }
 
@@ -56,7 +38,7 @@ header {
   padding: 0;
   width: 24px;
   height: 2px;
-  background-color: var(--text-color);
+  background-color: var(--text-color-background);
   margin: 5px 0 5px 5px;
   transition: 0.4s;
 }
@@ -89,6 +71,10 @@ header {
   border-color: transparent;
 }
 
+#top img {
+  width: 50%;
+}
+
 .burger-button {
   display: block;
 }
@@ -97,7 +83,8 @@ header {
   display: none;
   flex-direction: column;
   text-align: center;
-  height: 800px; /* temp */
+  height: 800px;
+  /* temp */
 }
 
 .nav-menu div {
@@ -109,7 +96,7 @@ header {
 }
 
 .nav-menu .navlink {
-  color: var(--text-color);
+  color: var(--text-color-background);
   text-decoration: none;
   font-size: 17px;
   font-weight: bold;
@@ -117,8 +104,8 @@ header {
 
 .nav-menu .join {
   padding: 3px 18px;
-  border: 2px solid var(--text-color);
-  color: var(--text-color);
+  border: 2px solid var(--text-color-background);
+  color: var(--text-color-background);
   font-size: 12.6px;
   font-weight: 700;
   text-decoration: none;
@@ -126,7 +113,7 @@ header {
 }
 
 .join:hover {
-  background-color: var(--text-color);
+  background-color: var(--text-color-background);
   color: black;
 }
 
@@ -175,6 +162,7 @@ header {
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
+
 .jorney {
   font-weight: 700;
   font-size: 12px;
@@ -212,6 +200,10 @@ h1 {
   align-items: stretch;
 }
 
+.icon-video {
+  width: 20px;
+}
+
 .goto-norway-video {
   display: flex;
   flex-direction: row;
@@ -239,7 +231,7 @@ h1 {
 .goto-norway-video a:link,
 .goto-norway-video a:hover,
 .goto-norway-video a:visited {
-  color: var(--text-color);
+  color: var(--text-color-background);
 }
 
 .intro-video video {
@@ -259,13 +251,17 @@ h1 {
     margin: 0;
   }
 
+  .icon-video {
+    width: 20px;
+  }
+
   .intro-video video {
     min-width: 215px;
     max-width: 350px;
   }
 }
 
-.next-trip > p {
+.next-trip>p {
   margin-top: 20px;
 }
 
@@ -281,7 +277,7 @@ h1 {
 }
 
 .price-date span:first-child {
-  border-right: 1px solid var(--text-color);
+  border-right: 1px solid var(--text-color-background);
   font-size: 12px;
   font-weight: 700;
   padding-right: 2px;
@@ -307,7 +303,7 @@ h1 {
 .read a {
   font-size: 14px;
   font-weight: 700;
-  color: var(--text-color);
+  color: var(--text-color-background);
   white-space: nowrap;
   height: 24px;
   line-height: 24px;
@@ -323,6 +319,7 @@ h1 {
 }
 
 .read a img {
+  width: 24px;
   display: inline-block;
   vertical-align: middle;
   padding-left: 3px;

@@ -1,0 +1,25 @@
+.faq{
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+}
+
+.short-line{
+    color: var(--dash-color);
+}
+
+.text-dark{
+    color: var(--dark-text-color);
+}
+
+.faq__img-container{
+    width: 400px;
+}
+
+.faq-img{
+    width: 100%;
+    height: 100%;
+}
+
+.questions__list{
+    list-style-type: none;
+}

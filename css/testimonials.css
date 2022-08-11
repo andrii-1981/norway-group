@@ -1,35 +1,44 @@
+.testimonials {
+    background-color: var(--testimonials-background-color);
+
+}
+
+
 .testimonials__container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
     text-align: center;
-    margin: 100px 0;
-    background-image: url(../img/testimonials/testimonials_background.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-.dash {
- color: var(--span-h2-color);
-
 }
 
 .testimonials__header {
-    color: var(--h2-text-color);
+    color: var(--text-color);
     text-transform: uppercase;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 14px;
+    font-style: bold;
     margin-bottom: 30px;
 }
-
+.carousel-indicators [data-bs-target] {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: 0 15px -30px 15px;
+}
 .travelers {
-    color: var(--p-text-color);
+    color: var(--text-color);
     font-size: 40px;
     font-weight: 700;
+    line-height: 50px;
     margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .testimonials__text {
     color: var(--p-text-color);
+    padding: 0 30px;
     margin-bottom: 40px;
 }
 
@@ -40,7 +49,9 @@
     margin: 0 auto;
 }
 
-.experience__image, .experience__name, .experience__text {
+.experience__image,
+.experience__name,
+.experience__text {
     margin-top: 30px;
 }
 
@@ -58,24 +69,26 @@
     margin-bottom: 30px;
 }
 
-@media (min-width: 600px) {
-    .testimonials__container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .travelers{
-        font-size: 16px;
-        font-weight: 700;
-    }
-    .testimonials__text {
-        font-size: 14px;
-
-    }
-    .experience__image {
-        margin: 0 auto;
-    }
+@media (min-width: 500px) {
+   .testimonials{
+      background-image: url(../img/testimonials/testimonials_background.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
 }
 
-
-
+@media (min-width:1020px) {
+    .testimonials__header{
+        font-size: 13px;
+        font-weight: 500;  
+    }
+    .travelers {
+        font-size: 45px;
+        font-weight: 700;
+        letter-spacing: 1.35px;
+    }
+    .testimonials__text {
+        font-size: 19px;
+        font-weight: 400;
+    }
+}
