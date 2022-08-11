@@ -1,42 +1,50 @@
 .footer__container {
-    width: 305px;
-    height: 995px;
+    min-width: 320px;
+    height: 890px;
     background-image: url(../img/footer/mountain-wallpaper.jpg);
     background-size: cover;
+    background-position: center;
     object-fit: cover;
+    margin: auto;
 }
 
-.footer__email__logo,
-.footer__adress__logo,
-.footer__phone__logo{
+.footer__contacts img {
     width: 50px;
     height: 50px;
+    margin: auto;
 }
+
+
 .footer__contacts {
     width: 275px;
     height: 235px;
     background-color: rgba(0, 0, 0, 0.65);
     font-size: 24px;
     color: var(--h5-text-color);
-    display: inline-block; 
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    padding: 47px 27px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .footer__contacts__h {
     font-size: 24px;
     color: var(--h5-text-color);
+    margin-top: 20px;
 }
 
 .footer__contacts-p {
     font-size: 15px;
-    color: var(--h5-text-color);
+    color: rgb(169, 169, 169);
+    margin-top: 20px;
 }
 
 .footer__links {
     background-color: black;
+    padding: 60px 24px 15px 24px;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+}
 }
 
 .logo__link {
@@ -47,11 +55,42 @@
 
 .logo__link:hover {
     color: var(--h5-text-color);
+}
 
+.logo__link__footer {
+    width: 176px;
+    height: 33px;
+    margin: auto;
+}
+
+.navigation__footer {
+    padding-top: 20px;
+    flex-direction: column;
+    margin-bottom: -10px;
+    margin-top: -10px;
+    max-width: calc(100% + 20px);
+    width: calc(100% + 10px);
+}
+
+.navigation__footer li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navigation__links__footer {
+    color: var(--join-color);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.navigation__links__footer:hover {
+    color: var(--h5-text-color);
 }
 
 .footer__banner {
     background-color: black;
+    justify-content: center;
+    text-align: center;
+
 }
 
 .social__networks__footer {
@@ -59,6 +98,11 @@
 }
 .created, .rights {
     color: var(--h5-text-color);
-    font-size: 13px;
+    font-size: 12px;
 }
 
+@media (min-width: 1000px) {
+    .navigation__footer li {
+        display: inline;
+    }
+}
