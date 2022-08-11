@@ -15,6 +15,9 @@
   --text-color-background: rgb(255, 255, 255);
   --join-background: #232428;
   --input-background: rgb(45, 46, 52);
+  --secondary-background-color: #232428;
+  --secondary-text-color: #fff;
+  --dark-text-color: #505155;
   font-family: 'Roboto', sans-serif;
 }
 
