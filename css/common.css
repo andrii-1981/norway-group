@@ -16,6 +16,8 @@
   --join-background: #232428;
   --input-background: rgb(45, 46, 52);
   --secondary-background-color: #232428;
+  --testimonials-background-color: rgba(247,247,247,255);
+  --border-color: rgba(33, 39, 54, 0.12);
   --secondary-text-color: #fff;
   --dark-text-color: #505155;
   font-family: 'Roboto', sans-serif;
@@ -47,5 +49,10 @@ img {
   width: 100%;
 }
 .dash {
-  color: var(--dash-color);
+  color:  var(--dash-color);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: -2px;
+  margin: 0 5px;
+  
 }
