@@ -21,94 +21,105 @@
 
 <body>
      <!-- Block 1 "header" Oleg starts here -->
-     <header>
-          <div class="container" id="toptop">
-               <!-- ============ -->
-               <nav class="header-top">
-                    <div class="top-items">
-                         <div class="logo-button">
-                              <button id="top" onClick="window.location.reload();">
-                                   <img width="200" src="img/norway-logo.png" alt="Refresh" />
-                              </button>
-                         </div>
-                         <div class="burger-button">
-                              <a href="javascript:void(0);" onclick="mobileMenu()">
-                                   <div class="container-burger" onclick="animateIcon(this)">
-                                        <div class="bar1"></div>
-                                        <div class="bar2"></div>
-                                        <div class="bar3"></div>
-                                   </div>
-                              </a>
-                         </div>
+     <header id="header">
+          <div class="header-container" id="header-cont">
+            <nav class="header-top">
+              <div class="top-items">
+                <div class="logo-button">
+                  <button id="top" onClick="window.location.reload();">
+                    <img width="200" src="img/norway-logo.png" alt="Refresh" />
+                  </button>
+                </div>
+    
+                <div class="burger-button">
+                  <a href="javascript:void(0);" onclick="mobileMenu()">
+                    <div class="container-burger" id="burger-icon">
+                      <div class="bar1"></div>
+                      <div class="bar2"></div>
+                      <div class="bar3"></div>
                     </div>
-
-                    <div class="nav-menu" id="myLinks">
-                         <div><a href="#about_cards" class="navlink">About Us</a></div>
-                         <div><a href="#itinerary" class="navlink">Itinerary</a></div>
-                         <div><a href="#testimonials" class="navlink">Testimonials</a></div>
-                         <div><a href="#blog" class="navlink">Blog</a></div>
-                         <div><a href="#contacts" class="navlink">Contacts</a></div>
-                         <div>
-                              <a href="#join" class="join">Join Us&nbsp;
-                                   <span class="material-symbols-outlined trending_flat">
-                                        trending_flat
-                                   </span></a>
-                         </div>
-                    </div>
-               </nav>
-
-               <br />
-               <div id="desktop">
-                    <div class="header-middle">
-                         <div class="intro-heading">
-                              <p class="jorney">
-                                   <span class="dash">----</span> YOUR PERFECT JORNEY TO
-                              </p>
-                              <h1 class="norway">Norway</h1>
-                         </div>
-                    </div>
-
-                    <div class="header-bottom">
-                         <div class="goto-norway-video">
-                              <div>
-                                   <img class="icon-video" width="20" src="img/header/icon-video-red.svg"
-                                        alt="press to see video" />
-                              </div>
-                              <div>
-                                   <span class="dash">----</span>
-                                   <a href="#norway__items" class="goto-watch">Watch the promo video!</a>
-                              </div>
-                         </div>
-
-                         <div class="right-side">
-                              <div class="intro-video">
-                                   <video controls poster="img/header/press-to-play-video.jpg">
-                                        <source type="video/mp4" src="video/introducing-norway.mp4" />
-                                   </video>
-                              </div>
-
-                              <div class="next-trip">
-                                   <p class="trip-heading">Next Trip to Norway</p>
-                                   <p class="price-date">
-                                        <span>$2300 &nbsp;</span>
-                                        <span>&nbsp;17 NOV. - 22 NOV.</span>
-                                   </p>
-                                   <p class="travel">
-                                        10 days of travel and 5 unique places in Norway are waiting
-                                        for us ...
-                                   </p>
-                                   <p class="read">
-                                        <a href="#places">
-                                             Read more
-                                             <img src="img/header/icon-right-arrow-white.svg" alt="->" />
-                                        </a>
-                                   </p>
-                              </div>
-                         </div>
-                    </div>
-               </div>
+                  </a>
+                </div>
+              </div>
+    
+              <div class="nav-menu" id="links">
+                <div><a href="#about_cards" class="navlink">About Us</a></div>
+                <div><a href="#itinerary" class="navlink">Itinerary</a></div>
+                <div>
+                  <a href="#testimonials" class="navlink">Testimonials</a>
+                </div>
+                <div><a href="#blog" class="navlink">Blog</a></div>
+                <div><a href="#contacts" class="navlink">Contacts</a></div>
+                <div>
+                  <a href="#join" class="join"
+                    >Join Us&nbsp;
+                    <span class="material-symbols-outlined trending_flat">
+                      trending_flat
+                    </span></a
+                  >
+                </div>
+              </div>
+            </nav>
+    
+            <br />
+    
+            <div id="header-main">
+              <div class="header-middle">
+                <div class="intro-heading">
+                  <p class="jorney">
+                    <span class="long-dash"> ━ </span> YOUR PERFECT JORNEY TO
+                  </p>
+                  <h1 class="norway">Norway</h1>
+                </div>
+              </div>
+    
+              <div class="header-bottom">
+                <div class="goto-norway-video">
+                  <div>
+                    <img
+                      class="icon-video"
+                      width="20"
+                      src="img/header/icon-video-red.svg"
+                      alt="press to see video"
+                    />
+                  </div>
+                  <div>
+                    <span class="long-dash">━</span>
+                    <a href="#norway__items" class="goto-watch"
+                      >Watch the promo video!</a
+                    >
+                  </div>
+                </div>
+    
+                <div class="annonce">
+                  <div class="intro-video">
+                    <video controls poster="img/header/press-to-play-video.jpg">
+                      <source type="video/mp4" src="video/introducing-norway.mp4" />
+                    </video>
+                  </div>
+    
+                  <div class="next-trip">
+                    <p class="trip-heading">Next Trip to Norway</p>
+                    <p class="price-date">
+                      <span>$2300 &nbsp;</span>
+                      <span>&nbsp;17 NOV. - 22 NOV.</span>
+                    </p>
+                    <p class="travel">
+                      10 days of travel and 5 unique places in Norway are waiting
+                      for us ...
+                    </p>
+                    <p class="read">
+                      <a href="#places">
+                        Read more
+                        <img src="img/header/icon-right-arrow-white.svg" alt="->" />
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-     </header>
+        </header>
      <!-- End of Oleg`s section -->
 
      <main>
