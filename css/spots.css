@@ -1,20 +1,16 @@
-.spots__container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .spots{
     background-color: var(--secondary-background-color);
     color: var(--secondary-text-color);
     padding-top: 125px;
 }
 
-.short-line{
-    color: var(--dash-color);
+.spots__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.text-dark{
+.spots__text-dark{
     color: var(--dark-text-color);
 }
 
@@ -26,15 +22,13 @@
     max-width: 770px;
 }
 
-.spots__subheader, .spots__text{
-    margin-top: 25px;
-    margin-bottom: 25px;
+.spots__subheader, .spots__text, .spots__quote, .quote__text, .quote__author{
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .spots__quote{
     margin: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,8 +43,6 @@
 
 .quote__text, .quote__author{
     margin: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
 }
 
 .quote__img-container{
@@ -59,7 +51,11 @@
 }
 
 .quote__quotation-mark{
-    width: 50px;
+    margin-top: -50px;
+    background-color: var(--secondary-background-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 90px;
 }
 
 .spots__gallery{
@@ -71,6 +67,5 @@
 }
 
 .gallery__img{
-    width: 100%;
     height: 100%;
 }
