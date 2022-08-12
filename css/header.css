@@ -3,19 +3,17 @@
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  color: rgb(231, 217, 140)
-}
-
 header {
   color: var(--text-color-background);
-  background: url(/img/header/norway-mountain-sea.jpg) no-repeat center center scroll;
+  font-family: "Roboto", sans-serif;
+
+  background: url(img/header/norway-mountain-sea.jpg) no-repeat center center
+    scroll;
   background-size: cover;
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
 }
 
-.container {
+.header-container {
   padding: 24px;
 }
 
@@ -58,6 +56,9 @@ header {
 }
 
 /* ======================top====================== */
+.mobile {
+  background-color: var(--background-color); /* header-top */
+}
 
 .top-items {
   display: flex;
@@ -71,20 +72,12 @@ header {
   border-color: transparent;
 }
 
-#top img {
-  width: 50%;
-}
-
-.burger-button {
-  display: block;
-}
-
 .nav-menu {
   display: none;
   flex-direction: column;
   text-align: center;
-  height: 800px;
-  /* temp */
+  z-index: 999999;
+  height: 100vh;
 }
 
 .nav-menu div {
@@ -124,8 +117,20 @@ header {
   padding-bottom: 2px;
 }
 
+.burger-button {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
 @media (min-width: 992px) {
-  .header-top {
+  .mobile {
+    background-color: transparent;
+  }
+
+  nav {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -133,11 +138,12 @@ header {
   }
 
   .nav-menu {
-    display: flex;
+    display: flex !important;
     flex-direction: row;
     justify-content: flex-end;
     height: auto;
     align-items: center;
+    background-color: transparent;
   }
 
   .burger-button {
@@ -152,6 +158,10 @@ header {
   .nav-menu .navlink {
     font-size: 14px;
   }
+
+  .hide {
+    display: block;
+  }
 }
 
 /* =========================middle===================== */
@@ -162,7 +172,6 @@ header {
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
-
 .jorney {
   font-weight: 700;
   font-size: 12px;
@@ -174,14 +183,16 @@ header {
 }
 
 h1 {
+  font-family: "Playfair Display", serif;
   font-size: 70px;
   font-weight: 600;
+  color: rgb(200, 200, 200);
 }
 
 @media (min-width: 770px) {
   h1 {
     font-size: 125px;
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
@@ -198,10 +209,6 @@ h1 {
   justify-content: flex-start;
   flex-direction: column;
   align-items: stretch;
-}
-
-.icon-video {
-  width: 20px;
 }
 
 .goto-norway-video {
@@ -251,17 +258,13 @@ h1 {
     margin: 0;
   }
 
-  .icon-video {
-    width: 20px;
-  }
-
   .intro-video video {
     min-width: 215px;
     max-width: 350px;
   }
 }
 
-.next-trip>p {
+.next-trip > p {
   margin-top: 20px;
 }
 
@@ -319,7 +322,6 @@ h1 {
 }
 
 .read a img {
-  width: 24px;
   display: inline-block;
   vertical-align: middle;
   padding-left: 3px;
