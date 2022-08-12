@@ -1,18 +1,20 @@
-    /* #oslo,
-    trondheim,
-    bodo,
-    lofoten_islands,
-    tromso {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    } */
-
-
 .city_name {
 display: grid;
 grid-template-columns: 1fr 1fr;
 }
 
+.city_desr {
+  margin: 140px auto;
+}
+
 #norway_city {
   height: 800px;
+}
+
+.content_img {
+  height: 750px;
+}
+
+.places__container span {
+  color: #707070;
 }
