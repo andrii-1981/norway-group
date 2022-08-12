@@ -4,7 +4,7 @@
 }
 
 header {
-  color: var(--text-color-background);
+  color: var(--text-color-white);
   font-family: "Roboto", sans-serif;
 
   background: url(/img/header/norway-mountain-sea.jpg) no-repeat center center
@@ -36,7 +36,7 @@ header {
   padding: 0;
   width: 24px;
   height: 2px;
-  background-color: var(--text-color-background);
+  background-color: var(--text-color-white);
   margin: 5px 0 5px 5px;
   transition: 0.4s;
 }
@@ -90,7 +90,7 @@ header {
 }
 
 .nav-menu .navlink {
-  color: var(--text-color-background);
+  color: var(--text-color-white);
   text-decoration: none;
   font-size: 17px;
   font-weight: bold;
@@ -98,8 +98,8 @@ header {
 
 .nav-menu .join {
   padding: 3px 18px;
-  border: 2px solid var(--text-color-background);
-  color: var(--text-color-background);
+  border: 2px solid var(--text-color-white);
+  color: var(--text-color-white);
   font-size: 12.6px;
   font-weight: 700;
   text-decoration: none;
@@ -107,7 +107,7 @@ header {
 }
 
 .join:hover {
-  background-color: var(--text-color-background);
+  background-color: var(--text-color-white);
   color: black;
 }
 
@@ -243,7 +243,7 @@ h1 {
 .goto-norway-video a:link,
 .goto-norway-video a:hover,
 .goto-norway-video a:visited {
-  color: var(--text-color-background);
+  color: var(--text-color-white);
 }
 
 .intro-video video {
@@ -285,7 +285,7 @@ h1 {
 }
 
 .price-date span:first-child {
-  border-right: 1px solid var(--text-color-background);
+  border-right: 1px solid var(--text-color-white);
   font-size: 12px;
   font-weight: 700;
   padding-right: 2px;
@@ -311,7 +311,7 @@ h1 {
 .read a {
   font-size: 14px;
   font-weight: 700;
-  color: var(--text-color-background);
+  color: var(--text-color-white);
   white-space: nowrap;
   height: 24px;
   line-height: 24px;

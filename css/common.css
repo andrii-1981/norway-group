@@ -20,6 +20,10 @@
   --border-color: rgba(33, 39, 54, 0.12);
   --secondary-text-color: #fff;
   --dark-text-color: #505155;
+  
+  --background-color:#232428;
+  --text-color-white: rgb(255, 255, 255);
+
   font-family: 'Roboto', sans-serif;
 }
 
