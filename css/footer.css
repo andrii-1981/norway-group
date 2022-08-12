@@ -1,11 +1,21 @@
 .footer__container {
-    min-width: 320px;
-    height: 890px;
     background-image: url(../img/footer/mountain-wallpaper.jpg);
-    background-size: cover;
+   
+    background-size: auto;
     background-position: center;
     object-fit: cover;
+    justify-content: space-evenly;
+    border: 0;
     margin: auto;
+}
+
+@media (min-width: 800px) {
+    .footer__container {
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
 .footer__contacts img {
@@ -14,21 +24,30 @@
     margin: auto;
 }
 
-
 .footer__contacts {
-    width: 275px;
+    width: 80%;
     height: 235px;
     background-color: rgba(0, 0, 0, 0.65);
     font-size: 24px;
     color: var(--h5-text-color);
     padding: 47px 27px;
     text-align: center;
-    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+   
+}
+
+@media (min-width: 800px) {
+    .footer__contacts {
+     width: 275px;
+     margin-right: 50px;
+    }
 }
 
 .footer__contacts__h {
     font-size: 24px;
-    color: var(--h5-text-color);
+    color: rgb(255, 255, 255);
     margin-top: 20px;
 }
 
@@ -76,27 +95,35 @@
     padding-bottom: 10px;
 }
 .navigation__links__footer {
-    color: var(--join-color);
+    color: rgba(255, 255, 255, 0.4);
     font-size: 17px;
     text-decoration: none;
 }
 
 .navigation__links__footer:hover {
-    color: var(--h5-text-color);
+    color: rgb(255, 255, 255);
 }
 
 .footer__banner {
     background-color: black;
     justify-content: center;
     text-align: center;
+}
 
+@media (min-width: 900px) {
+    .footer__banner {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
 .social__networks__footer {
-    width: 30px;
+    width: 22px;
+    height: 22px;
 }
+
 .created, .rights {
-    color: var(--h5-text-color);
+    color: rgb(255, 255, 255);
     font-size: 12px;
 }
 
