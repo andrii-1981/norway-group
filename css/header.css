@@ -13,11 +13,20 @@ header {
   background-color: var(--background-color);
 }
 
+.first__container{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+
 .header-container {
   padding: 24px;
 }
 
-@media (min-width: 770px) {
+
+@media (min-width: 770px) { 
   .container {
     padding: 32px;
   }
@@ -79,6 +88,7 @@ header {
   text-align: center;
   z-index: 999999;
   height: 100vh;
+  /* width: 100vw; */
 }
 
 .nav-menu div {
