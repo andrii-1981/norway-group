@@ -20,10 +20,10 @@
   --border-color: rgba(33, 39, 54, 0.12);
   --secondary-text-color: #fff;
   --dark-text-color: #505155;
-  
+  --join-text: rgba(255,255,255,0.6);
   --background-color:#232428;
   --text-color-white: rgb(255, 255, 255);
-
+  --join-submit-color: #14a9ee;
   font-family: 'Roboto', sans-serif;
 }
 

@@ -1,44 +1,84 @@
 #join {
-    background-image: url(../img/contacts/man-by-sea.jpg);
-    background-size: cover;
+    background: url(../img/contacts/man-by-sea.jpg);
+    min-height: 750px;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: scroll;
-    position: relative;
+    background-size: cover;
+    display: flex;
     
+    padding: 110px 0 110px 0;
 }
 
 .join__container {
-    background-color: var(--join-backgrnd);
+    padding: 70px 60px 70px 60px;
+    background-color: var(--join-background);
     display: flex;
     flex-direction: column;
     text-align: center;
     min-width: 272px;
-    max-width: 719px;
+    max-width: 570px;
+    margin: 0 60px 0 60px;
 }
 
 .join__header {
-    color: var(--join-color);
+    color: var(--join-text);
     font-weight: 500;
 }
 
 .join__subheader {
-    color: var(--h5-text-color);
+    color: var(--text-color-background);
+    font-size: 45px;
+    margin: 20px 0 0 0;
 }
 
 .join__text {
-    color: var(--join-color);
+    color: var(--join-text);
+    margin-top: 25px;
 }
 
 .form__field {
     margin-bottom: 24px;
+    width: 100%;
 }
 
 .form__field > input {
-    background-color: var(--input-backgrnd);
-    max-width: 275px;
+    background-color: var(--input-background);
     width: 100%;
-    padding: 5px;
+    padding: 14px 20px 14px 20px;
     display: block;
-    border-style: none;
+    border: none;
+    margin: auto;
     margin-top: 12px;
+}
+
+.join__form-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form__field > input[type=date] {
+    color: var(--join-text);
+    
+}
+
+ input[type=submit] {
+    width: 100%;
+    padding: 14px 20px 14px 20px;
+    display: block;
+    border: none;
+    margin: auto;
+    background-color: var(--join-submit-color);
+    color: var(--text-color-background);
+    font-weight: 600;
+    margin-top: 57px;
+}
+
+input[type=submit]:hover {
+    transition: color .2s ,background-color .2s;
+    background-color: var(--text-color-background);
+    color: var(--dark-text-color);
+}
+::placeholder {
+    color: var(--join-text);
 }
