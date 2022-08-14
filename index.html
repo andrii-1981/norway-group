@@ -22,91 +22,93 @@
 <body>
      <!-- Block 1 "header" Oleg starts here -->
      <header id="header">
-          <div class="header-container" id="header-cont">
-               <nav class="header-top">
-                    <div class="top-items">
-                         <div class="logo-button">
-                              <button id="top" onClick="window.location.reload();">
-                                   <img width="200" src="img/norway-logo.png" alt="Refresh" />
-                              </button>
+          <div class="first__container">
+               <div class="header-container" id="header-cont">
+                    <nav class="header-top">
+                         <div class="top-items">
+                              <div class="logo-button">
+                                   <button id="top" onClick="window.location.reload();">
+                                        <img width="200" src="img/norway-logo.png" alt="Refresh" />
+                                   </button>
+                              </div>
+
+                              <div class="burger-button">
+                                   <a href="javascript:void(0);" onclick="mobileMenu()">
+                                        <div class="container-burger" id="burger-icon">
+                                             <div class="bar1"></div>
+                                             <div class="bar2"></div>
+                                             <div class="bar3"></div>
+                                        </div>
+                                   </a>
+                              </div>
                          </div>
 
-                         <div class="burger-button">
-                              <a href="javascript:void(0);" onclick="mobileMenu()">
-                                   <div class="container-burger" id="burger-icon">
-                                        <div class="bar1"></div>
-                                        <div class="bar2"></div>
-                                        <div class="bar3"></div>
+                         <div class="nav-menu" id="links">
+                              <div><a href="#about_cards" class="navlink">About Us</a></div>
+                              <div><a href="#itinerary" class="navlink">Itinerary</a></div>
+                              <div>
+                                   <a href="#testimonials" class="navlink">Testimonials</a>
+                              </div>
+                              <div><a href="#blog" class="navlink">Blog</a></div>
+                              <div><a href="#contacts" class="navlink">Contacts</a></div>
+                              <div>
+                                   <a href="#join" class="join">Join Us&nbsp;
+                                        <span class="material-symbols-outlined trending_flat">
+                                             trending_flat
+                                        </span></a>
+                              </div>
+                         </div>
+                    </nav>
+
+                    <br />
+
+                    <div id="header-main">
+                         <div class="header-middle">
+                              <div class="intro-heading">
+                                   <p class="jorney">
+                                        <span class="long-dash"> ━ </span> YOUR PERFECT JORNEY TO
+                                   </p>
+                                   <h1 class="norway">Norway</h1>
+                              </div>
+                         </div>
+
+                         <div class="header-bottom">
+                              <div class="goto-norway-video">
+                                   <div>
+                                        <img class="icon-video" width="20" src="img/header/icon-video-red.svg"
+                                             alt="press to see video" />
                                    </div>
-                              </a>
-                         </div>
-                    </div>
-
-                    <div class="nav-menu" id="links">
-                         <div><a href="#about_cards" class="navlink">About Us</a></div>
-                         <div><a href="#itinerary" class="navlink">Itinerary</a></div>
-                         <div>
-                              <a href="#testimonials" class="navlink">Testimonials</a>
-                         </div>
-                         <div><a href="#blog" class="navlink">Blog</a></div>
-                         <div><a href="#contacts" class="navlink">Contacts</a></div>
-                         <div>
-                              <a href="#join" class="join">Join Us&nbsp;
-                                   <span class="material-symbols-outlined trending_flat">
-                                        trending_flat
-                                   </span></a>
-                         </div>
-                    </div>
-               </nav>
-
-               <br />
-
-               <div id="header-main">
-                    <div class="header-middle">
-                         <div class="intro-heading">
-                              <p class="jorney">
-                                   <span class="long-dash"> ━ </span> YOUR PERFECT JORNEY TO
-                              </p>
-                              <h1 class="norway">Norway</h1>
-                         </div>
-                    </div>
-
-                    <div class="header-bottom">
-                         <div class="goto-norway-video">
-                              <div>
-                                   <img class="icon-video" width="20" src="img/header/icon-video-red.svg"
-                                        alt="press to see video" />
-                              </div>
-                              <div>
-                                   <span class="long-dash">━</span>
-                                   <a href="#norway__items" class="goto-watch">Watch the promo video!</a>
-                              </div>
-                         </div>
-
-                         <div class="annonce">
-                              <div class="intro-video">
-                                   <video controls poster="img/header/press-to-play-video.jpg">
-                                        <source type="video/mp4" src="video/introducing-norway.mp4" />
-                                   </video>
+                                   <div>
+                                        <span class="long-dash">━</span>
+                                        <a href="#norway__items" class="goto-watch">Watch the promo video!</a>
+                                   </div>
                               </div>
 
-                              <div class="next-trip">
-                                   <p class="trip-heading">Next Trip to Norway</p>
-                                   <p class="price-date">
-                                        <span>$2300 &nbsp;</span>
-                                        <span>&nbsp;17 NOV. - 22 NOV.</span>
-                                   </p>
-                                   <p class="travel">
-                                        10 days of travel and 5 unique places in Norway are waiting
-                                        for us ...
-                                   </p>
-                                   <p class="read">
-                                        <a href="#places">
-                                             Read more
-                                             <img src="img/header/icon-right-arrow-white.svg" alt="->"
-                                                  class="right-arrow" />
-                                        </a>
-                                   </p>
+                              <div class="annonce">
+                                   <div class="intro-video">
+                                        <video controls poster="img/header/press-to-play-video.jpg">
+                                             <source type="video/mp4" src="video/introducing-norway.mp4" />
+                                        </video>
+                                   </div>
+
+                                   <div class="next-trip">
+                                        <p class="trip-heading">Next Trip to Norway</p>
+                                        <p class="price-date">
+                                             <span>$2300 &nbsp;</span>
+                                             <span>&nbsp;17 NOV. - 22 NOV.</span>
+                                        </p>
+                                        <p class="travel">
+                                             10 days of travel and 5 unique places in Norway are waiting
+                                             for us ...
+                                        </p>
+                                        <p class="read">
+                                             <a href="#places">
+                                                  Read more
+                                                  <img src="img/header/icon-right-arrow-white.svg" alt="->"
+                                                       class="right-arrow" />
+                                             </a>
+                                        </p>
+                                   </div>
                               </div>
                          </div>
                     </div>
@@ -117,37 +119,40 @@
 
      <main>
           <!--Block 2 "about" Volodymir Iluk starts here-->
-          <section class="about" id="about_cards">
-               <h2 class="about__header"><span class="dash">----</span>About us</h2>
-               <div>
-                    <p class="about__info">Expertly crafted tours to Norway. <span>10 days</span> of admiring nordic
-                         cities. fjords, and waterfalls.</p>
-                    <p class="about__program">We offer guided tours in Norway - one of the most beautiful Nordic
-                         countries. We will cross the entire country, from Oslo to Tromsø, visit amazing cities, and see
-                         stunning nature. The program is carefully thought out, there are no more than 10 people in each
-                         group plus an English-speaking guide. Comfortable vans and nights in 3*+ hotels are included in
-                         the price.</p>
+          <!--<section class="about" >
+               <div class="about__container">
+                    <h2 class="about__header"><span class="dash">----</span>About us</h2>
+                    <div>
+                         <p class="about__info">Expertly crafted tours to Norway. <span>10 days</span> of admiring nordic
+                              cities. fjords, and waterfalls.</p>
+                         <p class="about__program">We offer guided tours in Norway - one of the most beautiful Nordic
+                              countries. We will cross the entire country, from Oslo to Tromsø, visit amazing cities, and see
+                              stunning nature. The program is carefully thought out, there are no more than 10 people in each
+                              group plus an English-speaking guide. Comfortable vans and nights in 3*+ hotels are included in
+                              the price.</p>
+                    </div>
+                    <div class="about__cards">
+                         <article class="cards__contact">
+                              <img width="187" height="62" src="img/about/01.png">
+                              <h3>Contact us</h3>
+                              <p>Some tour conditions may be changed according to the season. To learn more about the
+                                   program, please contact us.</p>
+                         </article>
+                         <article class="cards_pickdate">
+                              <img width="187" height="62" src="img/about/02.png">
+                              <h3>Pick a date</h3>
+                              <p>We conduct tours all year round, almost every week, but the most comfortable weather for
+                                   sightseeing is in summer./p>
+                         </article>
+                         <article class="cards_start">
+                              <img width="187" height="62" src="img/about/03.png">
+                              <h3>Start your journey</h3>
+                              <p>If necessary, we help you apply for a visa to Norway, as well as advise what things you
+                                   should take with you.</p>
+                         </article>
+                    </div>
                </div>
-               <div class="about__cards">
-                    <article class="cards__contact">
-                         <img width="187" height="62" src="img/img-block-2/01.png">
-                         <h3>Contact us</h3>
-                         <p>Some tour conditions may be changed according to the season. To learn more about the
-                              program, please contact us.</p>
-                    </article>
-                    <article class="cards_pickdate">
-                         <img width="187" height="62" src="img/img-block-2/02.png">
-                         <h3>Pick a date</h3>
-                         <p>We conduct tours all year round, almost every week, but the most comfortable weather for
-                              sightseeing is in summer./p>
-                    </article>
-                    <article class="cards_start">
-                         <img width="187" height="62" src="img/img-block-2/03.png">
-                         <h3>Start your journey</h3>
-                         <p>If necessary, we help you apply for a visa to Norway, as well as advise what things you
-                              should take with you.</p>
-                    </article>
-          </section>
+          </section>-->
           <!--End of block 2 "about" Volodymir Iluk-->
           <!-- Block 3 "itinery" Andrii Dmytrenko starts here -->
           <!-- <section id="itinerary" class="about_itinerary_">
@@ -456,7 +461,7 @@
                                         required></div>
                               <div class="form__field"><input type="email" name="email" placeholder="Your Email"
                                         required></div>
-                              <div class="form__field"><input type="date" name="date"><svg
+                              <div class="form__field"><input type="date" name="date"> <!--<svg
                                         xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                                         <g>
                                              <path
@@ -466,7 +471,7 @@
                                                   d="M7.5 14h1c.3 0 .5-.2.5-.5v-1c0-.3-.2-.5-.5-.5h-1c-.3 0-.5.2-.5.5v1c0 .3.2.5.5.5zm4 0h1c.3 0 .5-.2.5-.5v-1c0-.3-.2-.5-.5-.5h-1c-.3 0-.5.2-.5.5v1c0 .3.2.5.5.5zm4 0h1c.3 0 .5-.2.5-.5v-1c0-.3-.2-.5-.5-.5h-1c-.3 0-.5.2-.5.5v1c0 .3.2.5.5.5zm-8 3h1c.3 0 .5-.2.5-.5v-1c0-.3-.2-.5-.5-.5h-1c-.3 0-.5.2-.5.5v1c0 .3.2.5.5.5zm4 0h1c.3 0 .5-.2.5-.5v-1c0-.3-.2-.5-.5-.5h-1c-.3 0-.5.2-.5.5v1c0 .3.2.5.5.5zm4 0h1c.3 0 .5-.2.5-.5v-1c0-.3-.2-.5-.5-.5h-1c-.3 0-.5.2-.5.5v1c0 .3.2.5.5.5z">
                                              </path>
                                         </g>
-                                   </svg></div>
+                                   </svg> --></div>
                               <div><input type="submit" value="Request a quote"></div>
                          </form>
                     </div>
@@ -540,7 +545,8 @@
 
      <!--Block 9 "footer" Iryna Glinska starts here-->
      <footer class="footer">
-          <section class="footer__container" id="contacts">
+          <div class="footer__background">
+                <section class="footer__container" id="contacts">
                <div class="footer__contacts">
                     <img class="footer__email__logo" src="img/footer/email.png" alt="email">
                     <h2 class="footer__contacts__h">Write Us</h2>
@@ -557,6 +563,7 @@
                     <p class="footer__contacts-p">+1 (234) 567 89 00</p>
                </div>
           </section>
+          </div>
           <div class="footer__links">
                <div class="logo__link__footer">
                     <a class="logo__link__footer" href="#top"><img src="img/footer/logo.jpg" alt="top">
@@ -586,11 +593,11 @@
                </div>
                <div class="social__networks">
                     <a href="https://www.facebook.com/"><img class="social__networks__footer"
-                              src="img/footer/facebook.jpg" alt="facebook"></a>
+                              src="img/footer/facebook.png" alt="facebook"></a>
                     <a href="https://www.instagram.com/"><img class="social__networks__footer"
-                              src="img/footer/instagram.jpg" alt="instagram"></a>
+                              src="img/footer/instagram.png" alt="instagram"></a>
                     <a href="https://www.youtube.com/"><img class="social__networks__footer"
-                              src="img/footer/youtube.jpg" alt="youtube"></a>
+                              src="img/footer/youtube.png" alt="youtube"></a>
                </div>
                <div class="rights">
                     <p class="rights">All rights Reserved</p>

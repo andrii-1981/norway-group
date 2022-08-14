@@ -1,12 +1,19 @@
-.footer__container {
+.footer {
+    font-family: 'Roboto', sans-serif;
+  
+}
+
+.footer__background {
     background-image: url(../img/footer/mountain-wallpaper.jpg);
-   
-    background-size: auto;
+    background-size: cover;
     background-position: center;
     object-fit: cover;
+}
+
+.footer__container {
     justify-content: space-evenly;
     border: 0;
-    margin: auto;
+    padding-bottom: 30px;
 }
 
 @media (min-width: 800px) {
@@ -25,7 +32,7 @@
 }
 
 .footer__contacts {
-    width: 80%;
+    width: 90%;
     height: 235px;
     background-color: rgba(0, 0, 0, 0.65);
     font-size: 24px;
@@ -37,11 +44,17 @@
     margin-top: 50px;
    
 }
+@media (min-width: 770px) {
+    .footer__container {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+    }
+}
 
-@media (min-width: 800px) {
-    .footer__contacts {
-     width: 275px;
-     margin-right: 50px;
+@media (min-width: 990px) {
+    .footer__container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -83,17 +96,21 @@
 
 .navigation__footer {
     padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
     flex-direction: column;
-    margin-bottom: -10px;
-    margin-top: -10px;
-    max-width: calc(100% + 20px);
-    width: calc(100% + 10px);
 }
 
 .navigation__footer li {
     padding-top: 10px;
     padding-bottom: 10px;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 5px;
+  
 }
+
 .navigation__links__footer {
     color: rgba(255, 255, 255, 0.4);
     font-size: 17px;
@@ -117,17 +134,29 @@
     }
 }
 
+.social__networks {
+    margin: 20px;
+}
+
 .social__networks__footer {
-    width: 22px;
-    height: 22px;
+    width: 15px;
+    display: inline;
+    margin-right: 10px;
+}
+
+@media (min-width: 800px) {
+    .social__networks__footer {
+        margin-right: 15px;
+    }
 }
 
 .created, .rights {
     color: rgb(255, 255, 255);
     font-size: 12px;
+    margin: auto;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 800px) {
     .navigation__footer li {
         display: inline;
     }

@@ -58,10 +58,8 @@
 .video__container {
     background-image: url(../img/norway/video-background.jpg);
     height: 414px;
-    /* background-position-x: 50%;
-    background-position-y: 60.16%; */
-    object-fit: cover;
-    object-position: 50% 50%;
+    background-size: cover;
+    background-position: 50% 50%;
 }
 .icon__play-image {
     width: 50px;
