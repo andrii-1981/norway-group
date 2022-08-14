@@ -4,7 +4,8 @@ grid-template-columns: 1fr 1fr;
 }
 
 .city_desr {
-  margin: 200px 20px 200px 20px;
+  margin: 100px 20px 200px 20px;
+  max-width: 400px;
 }
 
 #norway_city {
@@ -22,6 +23,16 @@ grid-template-columns: 1fr 1fr;
   padding-top: 20px;
 }
 
-.places__container span {
+.places__container .tab_name {
   color: #707070;
+}
+
+.places_subheader {
+  margin-bottom: 15px;
+  width: 775px;
+}
+
+.city_desr .places_icon {
+  max-width: 10px;
+  max-height: 10px;
 }
