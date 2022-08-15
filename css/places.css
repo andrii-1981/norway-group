@@ -1,4 +1,5 @@
 .city_name {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -15,7 +16,33 @@
 
 .city_desr {
   margin: 100px 20px 200px 20px;
-  max-width: 370px;
+  max-width: 500px;
+}
+
+.city_desr .city_terms ul {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: grid;
+  list-style-type: none;
+}
+
+.city_desr .city_terms .first {
+  grid-column: 1;
+  grid-row: 1;
+  color: red;
+  font-weight: 700;
+}
+
+.city_desr .city_terms .second {
+  grid-column: 2;
+  grid-row: 1;
+  font-weight: 600;
+}
+
+.btn {
+  --bs-btn-border-radius: 0;
+  --bs-btn-bg: #14a9ee;
+  position: absolute;
 }
 
 .btn-info {
@@ -27,7 +54,7 @@
 
 button, input, optgroup, select, textarea {
   margin: 0;
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 #norway_city {
@@ -58,6 +85,10 @@ button, input, optgroup, select, textarea {
 
 .desr_elements .desr_list span {
   color: #707070;
+}
+
+.places {
+  margin-bottom: 100px;
 }
 
 .places__container .tab_name {
