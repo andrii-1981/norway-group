@@ -1,6 +1,6 @@
 .city_name {
-display: grid;
-grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .city_desr {
@@ -18,6 +18,18 @@ grid-template-columns: 1fr 1fr;
   max-width: 370px;
 }
 
+.btn-info {
+  --bs-btn-color: #ffff;
+  --bs-btn-hover-color: #ffff;
+  --bs-btn-hover-bg: #000000;
+  --bs-btn-hover-border-color: #000000;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  margin-top: 100px;
+}
+
 #norway_city {
   height: 800px;
 }
@@ -25,7 +37,6 @@ grid-template-columns: 1fr 1fr;
 #norway_city img {
   margin-left: 100px;
   display: block;
-  width: 100%;
   height: 100%;
   width: 75%;
 }
@@ -36,11 +47,24 @@ grid-template-columns: 1fr 1fr;
   padding-top: 20px;
 }
 
+.desr_elements ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.desr_elements ul>li {
+  height: 40px;
+}
+
+.desr_elements .desr_list span {
+  color: #707070;
+}
+
 .places__container .tab_name {
   color: #707070;
 }
 
 .places_subheader {
-  margin-bottom: 15px;
+  margin-bottom: 50px;
   width: 775px;
 }
