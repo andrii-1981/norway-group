@@ -60,14 +60,8 @@
     width: 90px;
 }
 
-.spots__gallery{
-    display: flex;
-    justify-content: center;
-    width: 10%;
+ .spots__gallery{
+    max-width: 770px;
     margin: auto;
-    padding-bottom: 60px;
-}
-
-.gallery__img{
-    height: 100%;
-}
+    padding-bottom: 120px;
+ }
