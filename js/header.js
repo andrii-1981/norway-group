@@ -6,7 +6,7 @@ function animateIcon() {
   
   function mobileMenu() {
     animateIcon();
-  
+   
     // +/- .mobile to .header-cont
     let headerTop = document.getElementById("header-cont");
     headerTop.classList.toggle("mobile");
