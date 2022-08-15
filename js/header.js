@@ -4,34 +4,33 @@ function animateIcon() {
     x.classList.toggle("change");
   }
   
+  
   function mobileMenu() {
     animateIcon();
    
-    // +/- .mobile to .header-cont
+    // +/-  class .mobile to  class .header-cont
     let headerTop = document.getElementById("header-cont");
     headerTop.classList.toggle("mobile");
   
-    // +/- .hide to .header-main
+    // +/- class .hide to class .header-main
     let headerMain = document.getElementById("header-main");
     headerMain.classList.toggle("hide");
   
     let navMenuLinks = document.getElementById("links");
-    let main = document.getElementsByClassName("noheader");
-  
+    let body = document.getElementById("body");
+
     if (navMenuLinks.style.display === "flex") {
       // case press on  ===X=== icon
       navMenuLinks.style.display = "none";
-      //on/off visibility of mobile version of nav-links
-      for (const x of main) {
-        x.style.display = "block";
-      }
+      // on/off visibility of mobile version of nav-links:
+      // (+/- class .noscroll to body (id="body")
+      body.classList.toggle("noscroll"); 
+
       //for-of ====> on/off visibility of main (no-header) blocks
     } else {
       // case press on  ===E=== icon
       navMenuLinks.style.display = "flex";
-      for (const x of main) {
-        x.style.display = "none";
-      }
+      body.classList.toggle("noscroll");
     }
   }
   
