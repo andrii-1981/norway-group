@@ -1,0 +1,43 @@
+.itinerary {
+    background-color: var(--background-color);
+}
+@media(min-width: 768px) {
+    .itinerary__container,
+    .cards__license,
+    .cards__guide,
+    .cards__satisfaction {
+        display: flex;
+    }
+}
+.itinerary-header-text,
+.itinerary__text,
+.text-cards {
+    color: var(--join-text);
+}
+.itinerary__text-whyte {
+        color: var(--text-color-white);
+}
+.itinerary__text-dark {
+        color: var(--text-color);
+}
+.itinerary__text{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.header-cards {
+    font-weight: bold;
+    color: var(--text-color-white);
+    margin-left: 20px;
+    margin-bottom: 25px;
+    max-width: 120px;
+}
+.itinerary__cards img {
+        width: 40px;
+        height: 40px;
+        margin: auto;
+}
+
+.text-cards {
+        font-size: 16px;
+        margin-left: 20px;
+}
