@@ -1,36 +1,39 @@
 function animateIcon() {
-    // change X to E in burger icon
-    let x = document.getElementById("burger-icon");
-    x.classList.toggle("change");
-  }
-  
-  
-  function mobileMenu() {
-    animateIcon();
-   
-    // +/-  class .mobile to  class .header-cont
-    let headerTop = document.getElementById("header-cont");
-    headerTop.classList.toggle("mobile");
-  
-    // +/- class .hide to class .header-main
-    let headerMain = document.getElementById("header-main");
-    headerMain.classList.toggle("hide");
-  
-    let navMenuLinks = document.getElementById("links");
-    let body = document.getElementById("body");
+  // change X <=> E in burger icon
+  const x = document.getElementById("burger-icon");
+  x.classList.toggle("change");
+}
 
-    if (navMenuLinks.style.display === "flex") {
-      // case press on  ===X=== icon
-      navMenuLinks.style.display = "none";
-      // on/off visibility of mobile version of nav-links:
-      // (+/- class .noscroll to body (id="body")
-      body.classList.toggle("noscroll"); 
-
-      //for-of ====> on/off visibility of main (no-header) blocks
-    } else {
-      // case press on  ===E=== icon
-      navMenuLinks.style.display = "flex";
-      body.classList.toggle("noscroll");
-    }
-  }
+function mobileMenu() {
+  animateIcon();  // change X <=> E in burger icon
   
+  const headerTop = document.getElementById("header-cont");// class .header-cont +/- class .mobile
+  headerTop.classList.toggle("mobile");
+  
+  const navMenuLinks = document.getElementById("links");
+  const body = document.getElementById("body");
+  
+  if (navMenuLinks.style.display === "flex") {
+    // case press on  ===X=== icon
+    navMenuLinks.style.display = "none";// on/off nav-links visibility in mobile version:
+    body.classList.toggle("noscroll"); // body (id="body") +/- class .noscroll
+    
+  } else {
+    // case press on  ===E=== icon
+    navMenuLinks.style.display = "flex";
+    body.classList.toggle("noscroll");
+  }
+}
+
+
+function changeEtoX (anchor){
+  mobileMenu();
+
+  // const navMenuLinks = document.getElementById("links");
+  // navMenuLinks.style.display = "flex";
+
+  // const body = document.getElementById("body");
+  // body.classList.toggle("noscroll");
+
+  document.location.href = anchor;  // forward user to anchor
+}  

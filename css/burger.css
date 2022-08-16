@@ -3,6 +3,7 @@
 .container-burger {
     display: inline-block;
     cursor: pointer;
+    margin-top: 12px;
   }
   
   .bar1,
