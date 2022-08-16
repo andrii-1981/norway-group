@@ -2,15 +2,9 @@
   overflow: hidden; /* Hide scrollbars */
 }
 
-.material-symbols-outlined {
-  /* Google CSS for icons */
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-}
-
 header {
   color: var(--text-color-white);
   font-family: "Roboto", sans-serif;
-
   background: url("../img/header/norway-mountain-sea.jpg") no-repeat center center
     scroll;
   background-size: cover;
@@ -22,7 +16,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
 }
 
 .header-container {
@@ -77,6 +70,10 @@ header {
   font-size: 17px;
   font-weight: bold;
 }
+
+.nav-menu .navlink:hover {
+  cursor: pointer;
+} 
 
 .nav-menu .join {
   padding: 3px 18px;

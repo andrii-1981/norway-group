@@ -25,15 +25,7 @@ function mobileMenu() {
   }
 }
 
-
-function changeEtoX (anchor){
-  mobileMenu();
-
-  // const navMenuLinks = document.getElementById("links");
-  // navMenuLinks.style.display = "flex";
-
-  // const body = document.getElementById("body");
-  // body.classList.toggle("noscroll");
-
+function hrefAndCloseBurger (anchor){
+  mobileMenu();  //close Burger (change icon E to icon X)
   document.location.href = anchor;  // forward user to anchor
 }  

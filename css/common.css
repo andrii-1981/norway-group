@@ -27,6 +27,11 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.material-symbols-outlined { 
+  /* Google CSS for icons */
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+}
+
 h2 {
   font-size: 13px;
   font-weight: 500;
