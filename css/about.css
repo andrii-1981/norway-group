@@ -18,6 +18,21 @@
     justify-content: flex-start;
 }
 
+.about__text:first-child {
+    color: #505155;
+}
+
+.about__info {
+    white-space: nowrap;
+}
+
+.about__text {
+    white-space: normal;
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;  
+}
+
 .about__days-accent {
     color: rgb(38, 153, 219);
 }
