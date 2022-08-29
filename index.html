@@ -323,9 +323,7 @@
                                         <p>We start our journey from Oslo, the capital of Norway. On a walking
                                              tour, you will see the opera house, parliament, the royal palace, and
                                              more.</p>
-                                        <<<<<<< HEAD <div class="desr_element">
-
-                                             =======
+                                        
                                              <div class="desr_elements">
                                                   <ul>
                                                        <li><i class="fa fa-cutlery" aria-hidden="true"></i><span>&nbsp;-
@@ -342,7 +340,7 @@
                                                                  class="fa fa-long-arrow-right"
                                                                  aria-hidden="true"></i></button>
                                                   </div>
-                                                  >>>>>>> 3b3e385893298dcf979177ce474ae0725ecac5ec
+                                                  
                                              </div>
                                    </div>
                                    <div class="content_img">
@@ -518,45 +516,10 @@
                          <p class="spots__text">The beauty of Norway can hardly be overestimated. It has literally
                               everything: glaciers, green forests, beaches. Come and see with your own eyes.</p>
                     </div>
-                    <div class="spots__gallery">
-                         <div id="spots__carousel" class="carousel slide" data-bs-ride="carousel">
-                              <div class="carousel-inner">
-                                   <div class="carousel-item active">
-                                        <img src="img/spots/gallery/gallery-img-01.jpg" class="d-block w-100"
-                                             alt="gallery-img-01">
-                                   </div>
-                                   <div class="carousel-item">
-                                        <img src="img/spots/gallery/gallery-img-02.jpg" class="d-block w-100"
-                                             alt="gallery-img-02">
-                                   </div>
-                                   <div class="carousel-item">
-                                        <img src="img/spots/gallery/gallery-img-03.jpg" class="d-block w-100"
-                                             alt="gallery-img-03">
-                                   </div>
-                                   <div class="carousel-item">
-                                        <img src="img/spots/gallery/gallery-img-04.png" class="d-block w-100"
-                                             alt="gallery-img-04">
-                                   </div>
-                                   <div class="carousel-item">
-                                        <img src="img/spots/gallery/gallery-img-05.jpg" class="d-block w-100"
-                                             alt="gallery-img-05">
-                                   </div>
-                                   <div class="carousel-item">
-                                        <img src="img/spots/gallery/gallery-img-06.jpg" class="d-block w-100"
-                                             alt="gallery-img-06">
-                                   </div>
-                              </div>
-                              <button class="carousel-control-prev" type="button" data-bs-target="#spots__carousel"
-                                   data-bs-slide="prev">
-                                   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                   <span class="visually-hidden">Previous</span>
-                              </button>
-                              <button class="carousel-control-next" type="button" data-bs-target="#spots__carousel"
-                                   data-bs-slide="next">
-                                   <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                   <span class="visually-hidden">Next</span>
-                              </button>
-                         </div>
+                    <div class="spots-carousel">
+                         <button class="spots-carousel__btn-prev"><img src="img/spots/arrow-left-circle.svg"></button>
+                         <div class="spots-carousel__slides"></div>    
+                         <button class="spots-carousel__btn-next"><img src="img/spots/arrow-right-circle.svg"></button>                 
                     </div>
                     <div class="spots__quote">
                          <div class="quote__img-container">
@@ -821,5 +784,6 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
           crossorigin="anonymous"></script>
+     <script src="js/spots-carousel.js"></script>      
 </body>
 </html>
