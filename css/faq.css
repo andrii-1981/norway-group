@@ -10,7 +10,7 @@
     flex-direction: column;
 }
 
-@media (min-width: 768px){
+@media (min-width: 760px){
     .faq__container{
         flex-direction: row;
     }
@@ -43,70 +43,35 @@
 }
 
 .faq__questions{
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 0;
-    border-bottom: 1px solid var(--dark-text-color);     
 }
 
-.faq__questions .accordion-collapse {
-    border-bottom: 0; 
-    border-radius: 0;
-}
-
-.faq__questions .accordion-button {
-    padding: 25px;
-    font-weight: bold;
-    font-size: 18px;
+.questions__header {
     background-color: var(--secondary-background-color);
     color: var(--secondary-text-color);
-    text-align: left;
+    border: none;
+    padding-bottom: 15px;
+}
+
+.questions__item{
     border-bottom: 1px solid var(--dark-text-color); 
 }
-.faq__questions .accordion-button:focus {
-    box-shadow: none;
-    border: none;
+
+.questions__answer {
+    display: none;
+    overflow: hidden;
 }
-.faq__questions .accordion-button:not(.collapsed) {
-    background: none;
-    background-color: var(--secondary-background-color);
-    color: var(--secondary-text-color);
-}
-.faq__questions .accordion-body {
-    margin: 0;
-    padding: 15px;
-    color: var(--secondary-text-color);
-    background-color: var(--secondary-background-color);
+  
+.active + .questions__answer{
+    display: flex;
+    padding-bottom: 15px;
 }
 
-.faq__questions .accordion-item {
-    margin: 0 auto;
+.questions__header::before{
+    content: '+ '; 
 }
 
-.faq__questions .accordion-button::after {
-    background-image: none;
+.questions__header.active::before{
+    content: '- ';
 }
-.faq__questions .accordion-button:not(.collapsed)::after {
-    background-image: none;
-}
-
-.faq__questions .accordion-button::before {
-    width: auto;
-    height: auto;
-    content: "+";
-    padding-right: 15px;
-    font-size: 40px;
-    background-image: none;
-    font-weight: 100;
-    color: var(--secondary-text-color);
-    transform: translateY(-4px);
-}
-.faq__questions .accordion-button:not(.collapsed)::before {
-    width: auto;
-    height: auto;
-    background-image: none;
-    content: "-";
-    padding-right: 15px;
-    font-size: 48px;
-    transform: translate(-5px, -4px);
-    transform: rotate(0deg);
-} 
