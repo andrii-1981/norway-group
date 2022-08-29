@@ -6,15 +6,15 @@
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-     
+
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-     integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-     
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-     
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
      <link rel="stylesheet" href="css/index.css">
-     
+
      <link rel="shortcut icon" href="img/norway-icon-favicon.png" type="image/x-icon" />
      <title>Norway</title>
      <script src="js/header.js"></script>
@@ -46,15 +46,15 @@
                          </div>
 
                          <div class="nav-menu" id="links">
-                              <div><a onclick="hrefAndCloseBurger('#about');" class="navlink">About Us</a></div>
-                              <div><a onclick="hrefAndCloseBurger('#itinerary');" class="navlink">Itinerary</a></div>
+                              <div><a href="#about" class="navlink" onclick="mobileMenu()">About Us</a></div>
+                              <div><a href="#itinerary" class="navlink" onclick="mobileMenu()">Itinerary</a></div>
                               <div>
-                                   <a onclick="hrefAndCloseBurger('#testimonials');" class="navlink">Testimonials</a>
+                                   <a href="#testimonials" class="navlink" onclick="mobileMenu()">Testimonials</a>
                               </div>
-                              <div><a onclick="hrefAndCloseBurger('#blog');" class="navlink">Blog</a></div>
-                              <div><a onclick="hrefAndCloseBurger('#contacts');" class="navlink">Contacts</a></div>
+                              <div><a href="#blog" class="navlink" onclick="mobileMenu()">Blog</a></div>
+                              <div><a href="#contacts" class="navlink" onclick="mobileMenu()">Contacts</a></div>
                               <div>
-                                   <a href="#join" class="join">Join Us&nbsp;
+                                   <a href="#join" class="join" onclick="mobileMenu()">Join Us&nbsp;
                                         <span class="material-symbols-outlined trending_flat">
                                              trending_flat
                                         </span></a>
@@ -123,40 +123,44 @@
                <div class="about__container">
                     <h2 class="about__header"><span class="dash">----</span>About us</h2>
                     <div class="about__info">
-                         <h3 class="about__text">Expertly crafted tours to Norway. <span
-                                   class="about__days-accent">10 days</span> of admiring nordic
+                         <h3 class="about__text">Expertly crafted tours to Norway. <span class="about__days-accent">10
+                                   days</span> of admiring nordic
                               cities. fjords, and waterfalls.</h3>
-                         <p class="about__text">We offer guided tours in Norway - one of the most beautiful Nordic countries. We will cross the entire country, from Oslo to Tromsø, visit amazing cities, and see stunning nature.
+                         <p class="about__text">We offer guided tours in Norway - one of the most beautiful Nordic
+                              countries. We will cross the entire country, from Oslo to Tromsø, visit amazing cities,
+                              and see stunning nature.
                               <br><br>
-                              The program is carefully thought out, there are no more than 10 people in each group plus an English-speaking guide. Comfortable vans and nights in 3*+ hotels are included in the price.
+                              The program is carefully thought out, there are no more than 10 people in each group plus
+                              an English-speaking guide. Comfortable vans and nights in 3*+ hotels are included in the
+                              price.
                          </p>
                     </div>
                     <div class="about__cards row">
                          <article class="card col-12 col-sm-6 col-md-4 col-lg-3 ">
                               <img src="img/about/01.png" class="card-img-top" alt="image 01">
                               <div class="card-body">
-                                <h4 class="card-title">Contact us</h4>
-                                <p class="card-text">Some tour conditions may be changed according to the season. To
-                                   learn more about the
-                                   program, please contact us.</p>
+                                   <h4 class="card-title">Contact us</h4>
+                                   <p class="card-text">Some tour conditions may be changed according to the season. To
+                                        learn more about the
+                                        program, please contact us.</p>
                               </div>
                          </article>
                          <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
                               <img src="img/about/02.png" class="card-img-top" alt="image 02">
                               <div class="card-body">
-                                <h4 class="card-title">Pick a date</h4>
-                                <p class="card-text">We conduct tours all year round, almost every week, but the most
-                                   comfortable weather for
-                                   sightseeing is in summer.</p>
+                                   <h4 class="card-title">Pick a date</h4>
+                                   <p class="card-text">We conduct tours all year round, almost every week, but the most
+                                        comfortable weather for
+                                        sightseeing is in summer.</p>
                               </div>
                          </article>
                          <article class="card col-12 col-sm-6 col-md-4 col-lg-3">
                               <img src="img/about/03.png" class="card-img-top" alt="image 03">
                               <div class="card-body">
-                                <h4 class="card-title">Start your journey</h4>
-                                <p class="card-text">If necessary, we help you apply for a visa to Norway, as well as
-                                   advise what things you
-                                   should take with you.</p>
+                                   <h4 class="card-title">Start your journey</h4>
+                                   <p class="card-text">If necessary, we help you apply for a visa to Norway, as well as
+                                        advise what things you
+                                        should take with you.</p>
                               </div>
                          </article>
                     </div>
@@ -822,4 +826,5 @@
           integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
           crossorigin="anonymous"></script>
 </body>
+
 </html>
