@@ -6,11 +6,12 @@ function animateIcon() {
   iconBurger.classList.toggle("change");
 }
 
-function mobileMenu() {  //open/close burger
+function mobileMenu() {
+  //open/close burger
   const navMenuLinks = document.getElementById("links");
   const body = document.getElementById("body");
   const headerTop = document.getElementById("header-cont");
-  
+
   if (window.screen.width <= 992) {
     animateIcon();
 
@@ -23,7 +24,6 @@ function mobileMenu() {  //open/close burger
       body.classList.toggle("noscroll");
       // on/off nav-links visibility in mobile version
       // body (id="body") +/- class .noscroll
-
     } else {
       // case press on  ===E=== icon:
       navMenuLinks.style.display = "flex";
